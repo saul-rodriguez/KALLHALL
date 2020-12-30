@@ -1,0 +1,34 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  TEST_KAL3
+* Top Cell Name: casc
+* View Name:     schematic
+* Netlisted on:  Dec 30 02:14:29 2020
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: TEST_KAL3
+* Cell Name:    casc
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT casc GD IN1 IN2 OUT
+*.PININFO GD:B IN1:B IN2:B OUT:B
+MM0 OUT IN2 net10 GD g45n1svt W=2u L=1u m=1
+MM1 net10 IN1 GD GD g45n1svt W=2u L=1u m=1
+.ENDS
+

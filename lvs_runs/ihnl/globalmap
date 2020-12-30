@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+TEST_KAL3/casc/schematic casc
+$endmodel
+$net
+$endnet
+$param
+$endparam

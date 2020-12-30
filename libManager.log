@@ -1,0 +1,85 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
+\o Sub version:		sub-version  s061 
+\o Arguments:		-unmapped -mpssession virtuoso5982 -mpshost s2424 
+\o Working Directory:	s2424:/home/saul/projects/KALLHALL
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o changeWorkingDir("/home/saul/projects/KALLHALL") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/home/saul/projects/KALLHALL/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(4782 35 751 771))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2678 111 751 771))
+\a cdsLibManager->libListBox->value = "KAL3"
+\a cdsLibManager->libLineEdit->value = "KAL3"
+\a cdsLibManager->cellListBox->value = "nmos4"
+\a cdsLibManager->cellLineEdit->value = "nmos4"
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "KAL3"
+\a cdsLibManager->libLineEdit->value = "KAL3"
+\a cdsLibManager->cellListBox->value = "nmos4"
+\a cdsLibManager->cellLineEdit->value = "nmos4"
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "analogLib"
+\a cdsLibManager->libLineEdit->value = "analogLib"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "nmos4"
+\a cdsLibManager->cellLineEdit->value = "nmos4"
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->cellListBox->value = "pmos4"
+\a cdsLibManager->cellLineEdit->value = "pmos4"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = "auCdl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 33 419 2 "pmos4")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "analogLib"
+\a copyCellForm->CopyFromCell->value = "pmos4"
+\a copyCellForm->CopyToLibrary->value = "analogLib"
+\a copyCellForm->CopyToCell->value = "pmos4"
+\a copyCellForm->ViewsToCopy->value = "auCdl auLvs hspiceD spectre symbol symbol_xform"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 TEST_KAL3 TST_LVS US_8ths ahdlLib avTech basic cdsDefTechLib functional rfExamples rfLib rfTlineLib"
+\a nrSetWindowVisibility(copyCellForm "show")
+\a nrResizeWindow(copyCellForm list(2809 127 468 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToLibrary->value = "KAL3"
+\a copyCellForm->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(copyCellForm list(2809 97 468 659))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

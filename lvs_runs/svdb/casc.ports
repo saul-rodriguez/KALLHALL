@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary casc
+IN1 1 IN1 24200 5000 metal1_conn
+GD 4 GD 8400 4600 metal1_conn
+IN2 2 IN2 30400 32800 metal1_conn
+OUT 5 OUT 14000 31400 metal1_conn
+OUT 5 OUT 14200 33000 metal1_conn

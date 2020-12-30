@@ -3,31 +3,31 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Wed Dec 30 02:14:34 2020
-#####  ERC Summary File              :   casc.sum
-#####  Extraction Report File        :   casc.rep
-#####  Comparison Report File        :   casc.rep.cls
-#####  Top Cell                      :   casc  <vs>  casc
+#####  NVN Run Start                 :   Wed Dec 30 19:56:30 2020
+#####  ERC Summary File              :   inv.sum
+#####  Extraction Report File        :   inv.rep
+#####  Comparison Report File        :   inv.rep.cls
+#####  Top Cell                      :   inv  <vs>  inv
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   TEST_KAL3 casc layout
-#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/casc.cdl (cdl)
+#####  Layout Design                 :   TEST_KAL3 inv layout
+#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/inv.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   casc.rep.cps
+#####  Pin Swap File                 :   inv.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)
 #####  Extraction Peak Memory Usage  :   35.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   235.45MB
+#####  NVN Peak Memory Usage         :   232.39MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   235.45MB
+#####  LVS Total Peak Memory Usage   :   232.39MB
 #####  
 ##############################################################################################################
 
@@ -64,7 +64,7 @@ Cells that have been blackboxed              |         0
          |     Initial Pins     |     Compare Pins     |            | 
 Cell     |   lay    :    sch    |   lay    :    sch    | Status     | Detail
 ---------+----------+-----------+----------+-----------+------------+-----------
-casc     |        4 :         4 |        4 :         4 | match      | 
+inv      |        4 :         4 |        4 :         4 | match      | 
 
 
 ##############################################################################################################
@@ -76,8 +76,8 @@ casc     |        4 :         4 |        4 :         4 | match      |
 Command Line LVS Rule Values
 ----------------------------
 
-    layout_primary                          casc {-top_cell casc}
-    schematic_primary                       casc {-source_top_cell casc}
+    layout_primary                          inv {-top_cell inv}
+    schematic_primary                       inv {-source_top_cell inv}
 
 LVS Rules Given in the Rules File
 ---------------------------------
@@ -85,9 +85,9 @@ LVS Rules Given in the Rules File
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
     lvs_abort                               -check_device_for_property_rule        no  
-    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/casc.gds
+    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/inv.gds
     layout_format                           gdsii
-    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/casc.cdl
+    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/inv.cdl
     schematic_format                        cdl
     lvs_netlist                             yes -allow_inconsistent_model
                                              
@@ -215,7 +215,7 @@ LVS Rules Given in the Rules File
     lvs_check_property                      L ( g45inds ) space space -tolerance 0
     lvs_check_property                      L ( g45inds ) nr nr -tolerance 0
     lvs_check_property                      L ( g45inds ) rad rad -tolerance 0
-    lvs_report_file                         casc.rep
+    lvs_report_file                         inv.rep
     lvs_report_max                          50 -mismatched_net_limit 100 
     lvs_map_device                          M ( g45n1svt ) MN ( g45n1svt ) -source_layout
     lvs_map_device                          M ( g45n1hvt ) MN ( g45n1hvt ) -source_layout
@@ -385,12 +385,12 @@ Effective LVS Rule Values
                               |                                                |
                               |        ------->>>   MATCH   <<<-------         |
                               |                                                |
-                              |                casc  <vs>  casc                |
+                              |                 inv  <vs>  inv                 |
                               |                                                |
                               |                                                |
                               +------------------------------------------------+
 
-+===[casc]====================================================================================================
++===[inv]=====================================================================================================
 |                                                 STATISTICS                                                  
 +=============================================================================================================
 
@@ -398,23 +398,24 @@ Effective LVS Rule Values
                   |     Original      |     Filtered      |     Reduced      
 Cell              |   lay   :   sch   |   lay   :   sch   |   lay   :  sch
 ------------------+---------+---------+---------+---------+---------+--------
+MP [4 pins]       |         :         |         :         |         :        
+ MP(G45P1SVT)     |       1 :       1 |       1 :       1 |       1 :       1
 MN [4 pins]       |         :         |         :         |         :        
- MN(G45N1SVT)     |       2 :       2 |       2 :       2 |       0 :       0
- MN:SerMos2#1     |       - :       - |       - :       - |       1 :       1
+ MN(G45N1SVT)     |       1 :       1 |       1 :       1 |       1 :       1
 ------------------+---------+---------+---------+---------+---------+--------
-Total             |       2 :       2 |       2 :       2 |       1 :       1
+Total             |       2 :       2 |       2 :       2 |       2 :       2
 ==================+=========+=========+=========+=========+=========+========
 Pins              |         :         |         :         |       4 :       4
 Nets              |         :         |         :         |       0 :       0
 ==================+=========+=========+=========+=========+=========+========
 
-+===[casc]====================================================================================================
++===[inv]=====================================================================================================
 |                                           INITIAL CORRESPONDENCES                                           
 +=============================================================================================================
 
 Type     | Name
----------+-------------------
-Pin      | GD IN1 IN2 OUT
+---------+-----------------
+Pin      | IN OUT VD VS
 
 
 ##############################################################################################################

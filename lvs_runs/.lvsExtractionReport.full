@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : casc.rep
-ERC Summary File         : casc.sum
-LVS Comparison Report    : casc.rep.cls
-LVS Softchk Report       : casc.softchk
-Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/casc.gds ("casc")
+Report File Name         : inv.rep
+ERC Summary File         : inv.sum
+LVS Comparison Report    : inv.rep.cls
+LVS Softchk Report       : inv.softchk
+Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/inv.gds ("inv")
 User Name                : saul
-Creation Time            : Wed Dec 30 02:14:33 2020
+Creation Time            : Wed Dec 30 19:56:29 2020
 Current directory        : /home/saul/projects/KALLHALL/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -28,6 +28,6 @@ PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
     LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)
 
 Clean cell list (added by extraction report parser )
- for cell "M1_PO_CDNS_2"
- for cell "casc"
+ for cell "inv"
  for cell "nmos4"
+ for cell "pmos4"

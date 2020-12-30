@@ -5,9 +5,9 @@ pwd_d=`pwd`
 cd /home/saul/projects/KALLHALL/lvs_runs ;\
 /pkg/cadence/installs/PVS161/bin/pvs \
 	-lvs \
-	-top_cell casc \
-	-source_top_cell casc \
-	-spice /home/saul/projects/KALLHALL/lvs_runs/casc.spi \
+	-top_cell inv \
+	-source_top_cell inv \
+	-spice /home/saul/projects/KALLHALL/lvs_runs/inv.spi \
 	-control /home/saul/projects/KALLHALL/lvs_runs/pvslvsctl \
 	-ui_data \
 	-gdb_data \

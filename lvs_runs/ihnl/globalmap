@@ -1,6 +1,6 @@
 CADENCE IHNL11140
 $model
-TEST_KAL3/casc/schematic casc
+TEST_KAL3/inv/schematic inv
 $endmodel
 $net
 $endnet

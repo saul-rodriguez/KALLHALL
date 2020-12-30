@@ -3,7 +3,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 30-Dec-2020  02:14:28
+Started at: 30-Dec-2020  19:56:24
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KALLHALL
@@ -11,7 +11,7 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KALLHALL/lvs_runs/casc.gds' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KALLHALL/lvs_runs/inv.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap
 WARNING (XSTRM-32): The layer map file '/pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -95,8 +95,8 @@ INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design 
 
 Summary of Options :
 library                                 TEST_KAL3
-strmFile                                /home/saul/projects/KALLHALL/lvs_runs/casc.gds
-topCell                                 casc
+strmFile                                /home/saul/projects/KALLHALL/lvs_runs/inv.gds
+topCell                                 inv
 view                                    layout
 runDir                                  /home/saul/projects/KALLHALL/lvs_runs
 logFile                                 /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
@@ -109,18 +109,20 @@ labelDepth                              32
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating stdVia KAL3/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_1.
-INFO (XSTRM-223): 2. Translating stdVia KAL3/M1_PO/layout as STRUCTURE M1_PO_CDNS_2.
-INFO (XSTRM-223): 3. Translating cellView KAL3/nmos4/layout as STRUCTURE nmos4.
+INFO (XSTRM-223): 1. Translating stdVia KAL3/M1_PO/layout as STRUCTURE M1_PO_CDNS_1.
+INFO (XSTRM-223): 2. Translating stdVia KAL3/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_2.
+INFO (XSTRM-223): 3. Translating stdVia KAL3/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_3.
+INFO (XSTRM-223): 4. Translating cellView KAL3/nmos4/layout as STRUCTURE nmos4.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
-INFO (XSTRM-223): 4. Translating cellView TEST_KAL3/casc/layout as STRUCTURE casc.
+INFO (XSTRM-223): 5. Translating cellView KAL3/pmos4/layout as STRUCTURE pmos4.
+INFO (XSTRM-223): 6. Translating cellView TEST_KAL3/inv/layout as STRUCTURE inv.
 
 Summary of Objects Translated:
 	Scalar Instances:                       2
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             28
+	Rectangles:                             46
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -135,10 +137,10 @@ Summary of Objects Translated:
 	Standard Vias                           3
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               4
+	Pathsegs:                               1
 	Text:                                   0
-	TextDisplay:                            5
-	Cells:                                  4
+	TextDisplay:                            4
+	Cells:                                  6
 
-Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 4392KB
+Elapsed Time: 0.3s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 4384KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.

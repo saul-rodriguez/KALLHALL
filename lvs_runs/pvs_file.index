@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KALLHALL
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KALLHALL/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1609290867_389
+"Job Signature" internal none IPVS_1609354583_7845
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KALLHALL/pvtech.lib
@@ -12,22 +12,22 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609290867
+"PVS Job Time" internal none 1609354584
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
 "Control File" input text /home/saul/projects/KALLHALL/lvs_runs/pvslvsctl
 "DFII version" internal none 6.1.8.0
 "Do not check rules files before run" internal none ENABLED
-"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/casc.spi
-"Input Layout" input none OA: TEST_KAL3 casc layout
-"Input Schematic" input none OA: TEST_KAL3 casc schematic
-"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/lvs_runs/casc.gds
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/inv.spi
+"Input Layout" input none OA: TEST_KAL3 inv layout
+"Input Schematic" input none OA: TEST_KAL3 inv schematic
+"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/lvs_runs/inv.gds
 "Intermediate GDSII File creation Errors" output none /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
-"Layout Cell Name" internal none casc
+"Layout Cell Name" internal none inv
 "Layout ConvertPin" internal text geometry
-"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/casc.gds
+"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/inv.gds
 "Layout HierDepth" internal none 32
 "Layout Layermap" internal text /pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap
 "Layout Library Name" internal none TEST_KAL3
@@ -36,7 +36,7 @@
 "Layout ReplaceBusBitChar" input none nil
 "Layout Scale" internal none 0.0005
 "Layout TechLib" internal none KAL3
-"Layout Top Cell" internal none casc
+"Layout Top Cell" internal none inv
 "Layout View Name" internal none layout
 "Output Layout Cellmap I" internal text /home/saul/projects/KALLHALL/lvs_runs/lay_cellMap.txt
 "PIPO Log I" log text  /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
@@ -50,42 +50,42 @@
 "SI OSS Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
 "SI Output" log text  /home/saul/projects/KALLHALL/lvs_runs/SI.OUT
 "SI Setup File" internal text  /home/saul/projects/KALLHALL/lvs_runs/si.env
-"Schematic Cell Name" internal none casc
+"Schematic Cell Name" internal none inv
 "Schematic Library Name" internal none TEST_KAL3
-"Schematic Netlist" output text /home/saul/projects/KALLHALL/lvs_runs/casc.cdl
-"Schematic Top Cell" internal none casc
+"Schematic Netlist" output text /home/saul/projects/KALLHALL/lvs_runs/inv.cdl
+"Schematic Top Cell" internal none inv
 "Schematic View Name" internal none schematic
 "Simulator Mode" internal none auCdl
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609290872
-"Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/casc.rep.cls
+"PVS Job Time" internal none 1609354588
+"Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/inv.rep.cls
 "ERC Result" internal none EMPTY
-"ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/casc.sum
-"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/casc.spi
-"Extraction Report" output erc /home/saul/projects/KALLHALL/lvs_runs/casc.rep
+"ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/inv.sum
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/inv.spi
+"Extraction Report" output erc /home/saul/projects/KALLHALL/lvs_runs/inv.rep
 "Extraction Result" internal none CLEAN
 "LVS Report Options" internal none -none
-"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/casc.gds
-"Layout Top Cell" internal none casc
+"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/inv.gds
+"Layout Top Cell" internal none inv
 "PVS Job Mode" internal none lvs
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/saul/projects/KALLHALL/lvs_runs/.technology.rul
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
-"SCONNECT RDB" output rdb /home/saul/projects/KALLHALL/lvs_runs/casc.softchk
-"Schematic Top Cell" internal none casc
+"SCONNECT RDB" output rdb /home/saul/projects/KALLHALL/lvs_runs/inv.softchk
+"Schematic Top Cell" internal none inv
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609290872
+"PVS Job Time" internal none 1609354589
 "Comparison Result" internal none MATCH
-"LVS Run Name" internal none casc.rep
+"LVS Run Name" internal none inv.rep
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
 "Schematic Netlist" input text /home/saul/projects/KALLHALL/lvs_runs/netlist
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609290874
+"PVS Job Time" internal none 1609354591

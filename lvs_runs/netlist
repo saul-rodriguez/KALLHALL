@@ -2,9 +2,9 @@
 * auCdl Netlist:
 * 
 * Library Name:  TEST_KAL3
-* Top Cell Name: casc
+* Top Cell Name: inv
 * View Name:     schematic
-* Netlisted on:  Dec 30 02:14:29 2020
+* Netlisted on:  Dec 30 19:56:25 2020
 ************************************************************************
 
 *.BIPOLAR
@@ -22,13 +22,13 @@
 
 ************************************************************************
 * Library Name: TEST_KAL3
-* Cell Name:    casc
+* Cell Name:    inv
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT casc GD IN1 IN2 OUT
-*.PININFO GD:B IN1:B IN2:B OUT:B
-MM0 OUT IN2 net10 GD g45n1svt W=2u L=1u m=1
-MM1 net10 IN1 GD GD g45n1svt W=2u L=1u m=1
+.SUBCKT inv IN OUT VD VS
+*.PININFO IN:B OUT:B VD:B VS:B
+MM0 OUT IN VS VS g45n1svt W=2u L=1u m=1
+MM1 OUT IN VD VD g45p1svt W=2u L=1u m=1
 .ENDS
 

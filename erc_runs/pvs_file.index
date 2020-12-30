@@ -1,0 +1,66 @@
+"Cadence Directory" internal none /home/saul/projects/KALLHALL/.cadence/
+"Current Directory" internal none /home/saul/projects/KALLHALL
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/saul/projects/KALLHALL/erc_runs/.preset.autosave
+"Job Signature" internal none IPVS_1609354148_7845
+"PVS Job Mode" internal none erc
+"Run Directory" internal none /home/saul/projects/KALLHALL/erc_runs
+"Technology Mapping File" internal none /home/saul/projects/KALLHALL/pvtech.lib
+"Technology Name" internal none "gpdk045_pvs"
+"Technology Rule File" internal none /home/saul/projects/KALLHALL/erc_runs/.technology.rul
+"Technology RuleSet" internal none "default"
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvsgui
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1609354152
+"Control File" input text /home/saul/projects/KALLHALL/erc_runs/pvsercctl
+"DFII version" internal none 6.1.8.0
+"Do not check rules files before run" internal none ENABLED
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/erc_runs/inv.spi
+"Input Layout" input none OA: TEST_KAL3 inv layout
+"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/erc_runs/inv.gds
+"Intermediate GDSII File creation Errors" output none /home/saul/projects/KALLHALL/erc_runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" output none /home/saul/projects/KALLHALL/erc_runs/PIPO1.LOG
+"Layout Cell Name" internal none inv
+"Layout ConvertPin" internal text geometry
+"Layout GDSII" input none /home/saul/projects/KALLHALL/erc_runs/inv.gds
+"Layout HierDepth" internal none 32
+"Layout Layermap" internal text /pkg/cadence_pdks/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+"Layout Library Name" internal none TEST_KAL3
+"Layout MaxVertices" internal none 2048
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout ReplaceBusBitChar" input none nil
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none KAL3
+"Layout Top Cell" internal none inv
+"Layout View Name" internal none layout
+"Output Layout Cellmap I" internal text /home/saul/projects/KALLHALL/erc_runs/lay_cellMap.txt
+"PIPO Log I" log text  /home/saul/projects/KALLHALL/erc_runs/PIPO1.LOG
+"PIPO Output I" internal text  /home/saul/projects/KALLHALL/erc_runs/PIPO1.OUT
+"PIPO Setup File I" internal text  /home/saul/projects/KALLHALL/erc_runs/pipo1.setup
+"PVS Job Log" log text /home/saul/projects/KALLHALL/erc_runs/pvsuierc.log
+"PVS Job Mode" internal none erc
+"Rule File" input text /home/saul/projects/KALLHALL/erc_runs/.technology.rul
+"Run Directory" internal none /home/saul/projects/KALLHALL/erc_runs
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvsvirt
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1609354152
+"ERC Result" internal none EMPTY
+"ERC Summary" output text /home/saul/projects/KALLHALL/erc_runs/inv.sum
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/erc_runs/inv.spi
+"Extraction Report" output erc /home/saul/projects/KALLHALL/erc_runs/inv.ext.rep
+"Extraction Result" internal none CLEAN
+"LVS Report Options" internal none -none
+"Layout GDSII" input none /home/saul/projects/KALLHALL/erc_runs/inv.gds
+"Layout Top Cell" internal none inv
+"PVS Job Mode" internal none erc
+"Report MaxResults" internal none 1000
+"Rule File" input text /home/saul/projects/KALLHALL/erc_runs/.technology.rul
+"Run Directory" internal none /home/saul/projects/KALLHALL/erc_runs/
+"SCONNECT RDB" output rdb /home/saul/projects/KALLHALL/erc_runs/inv.softchk
+"UI Data" internal none ENABLED
+"PVS Version" internal none 16.15-s010
+"Binary Name" internal none pvs
+"PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
+"PVS Job Time" internal none 1609354153

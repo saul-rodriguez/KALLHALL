@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : inv_2272.db
+EDB Library dir : DFFX1_21263.db
 ECDB dir        : ./
-Top Cell        : inv
-CDL netlist     : svdb/inv.net
-Layer map file  : svdb/inv.ecdbmap
-Text map file   : svdb/inv.ports
-Dependency map  : inv.lmap.perc
-Lvs file        : svdb/inv.lvsfile
-Float net file : .inv.info.softchk
+Top Cell        : DFFX1
+CDL netlist     : svdb/DFFX1.net
+Layer map file  : svdb/DFFX1.ecdbmap
+Text map file   : svdb/DFFX1.ports
+Dependency map  : DFFX1.lmap.perc
+Lvs file        : svdb/DFFX1.lvsfile
+Float net file : .DFFX1.info.softchk
 debug           : 0
-Source Library  : inv_2272
+Source Library  : DFFX1_21263

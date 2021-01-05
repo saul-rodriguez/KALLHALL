@@ -3,31 +3,34 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Sat Jan  2 10:54:39 2021
-#####  ERC Summary File              :   inv.sum
-#####  Extraction Report File        :   inv.rep
-#####  Comparison Report File        :   inv.rep.cls
-#####  Top Cell                      :   inv  <vs>  inv
+#####  NVN Run Start                 :   Tue Jan  5 23:38:57 2021
+#####  ERC Summary File              :   DFFX1.sum
+#####  Extraction Report File        :   DFFX1.rep
+#####  Comparison Report File        :   DFFX1.rep.cls
+#####  Top Cell                      :   DFFX1  <vs>  DFFX1
 #####  
 #####  Run Result                    :   MATCH
 #####  
-#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####  Run Summary                   :   [WARN]  Top Cell Has Extra Pins
+#####                                :   [WARN]  Layout Netlist Is Empty
+#####                                :   [WARN]  Schematic Netlist Is Empty
+#####                                :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   TEST_KAL3 inv layout
-#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/inv.cdl (cdl)
+#####  Layout Design                 :   KALHALL_STD_LIB DFFX1 layout
+#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/DFFX1.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   inv.rep.cps
+#####  Pin Swap File                 :   DFFX1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
-#####  Extraction Exec Time          :   0h 0m 1s - (1s)
-#####  Extraction Peak Memory Usage  :   35.00MB
+#####  Extraction Exec Time          :   0h 0m 0s - (0s)
+#####  Extraction Peak Memory Usage  :   23.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   232.39MB
+#####  NVN Peak Memory Usage         :   230.28MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
-#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
-#####  LVS Total Peak Memory Usage   :   232.39MB
+#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
+#####  LVS Total Peak Memory Usage   :   230.28MB
 #####  
 ##############################################################################################################
 
@@ -61,10 +64,10 @@ Cells that have been blackboxed              |         0
 #
 ##############################################################################################################
 
-         |     Initial Pins     |     Compare Pins     |            | 
-Cell     |   lay    :    sch    |   lay    :    sch    | Status     | Detail
----------+----------+-----------+----------+-----------+------------+-----------
-inv      |        4 :         4 |        4 :         4 | match      | 
+          |     Initial Pins     |     Compare Pins     |            | 
+Cell      |   lay    :    sch    |   lay    :    sch    | Status     | Detail
+----------+----------+-----------+----------+-----------+------------+----------------------
+DFFX1     |       *0 :         4 |        0 :         0 | match      | empty, extra pins
 
 
 ##############################################################################################################
@@ -76,8 +79,8 @@ inv      |        4 :         4 |        4 :         4 | match      |
 Command Line LVS Rule Values
 ----------------------------
 
-    layout_primary                          inv {-top_cell inv}
-    schematic_primary                       inv {-source_top_cell inv}
+    layout_primary                          DFFX1 {-top_cell DFFX1}
+    schematic_primary                       DFFX1 {-source_top_cell DFFX1}
 
 LVS Rules Given in the Rules File
 ---------------------------------
@@ -85,9 +88,9 @@ LVS Rules Given in the Rules File
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
     lvs_abort                               -check_device_for_property_rule        no  
-    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/inv.gds
+    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/DFFX1.gds
     layout_format                           gdsii
-    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/inv.cdl
+    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/DFFX1.cdl
     schematic_format                        cdl
     lvs_netlist                             yes -allow_inconsistent_model
                                              
@@ -215,7 +218,7 @@ LVS Rules Given in the Rules File
     lvs_check_property                      L ( g45inds ) space space -tolerance 0
     lvs_check_property                      L ( g45inds ) nr nr -tolerance 0
     lvs_check_property                      L ( g45inds ) rad rad -tolerance 0
-    lvs_report_file                         inv.rep
+    lvs_report_file                         DFFX1.rep
     lvs_report_max                          50 -mismatched_net_limit 100 
     lvs_map_device                          M ( g45n1svt ) MN ( g45n1svt ) -source_layout
     lvs_map_device                          M ( g45n1hvt ) MN ( g45n1hvt ) -source_layout
@@ -385,37 +388,19 @@ Effective LVS Rule Values
                               |                                                |
                               |        ------->>>   MATCH   <<<-------         |
                               |                                                |
-                              |                 inv  <vs>  inv                 |
+                              |               DFFX1  <vs>  DFFX1               |
                               |                                                |
+                              |                   EXTRA PINS                   |
                               |                                                |
                               +------------------------------------------------+
 
-+===[inv]=====================================================================================================
-|                                                 STATISTICS                                                  
++===[DFFX1]===================================================================================================
+|                                                 EXTRA PINS                                                  
 +=============================================================================================================
 
-
-                  |     Original      |     Filtered      |     Reduced      
-Cell              |   lay   :   sch   |   lay   :   sch   |   lay   :  sch
-------------------+---------+---------+---------+---------+---------+--------
-MP [4 pins]       |         :         |         :         |         :        
- MP(G45P1SVT)     |       1 :       1 |       1 :       1 |       1 :       1
-MN [4 pins]       |         :         |         :         |         :        
- MN(G45N1SVT)     |       1 :       1 |       1 :       1 |       1 :       1
-------------------+---------+---------+---------+---------+---------+--------
-Total             |       2 :       2 |       2 :       2 |       2 :       2
-==================+=========+=========+=========+=========+=========+========
-Pins              |         :         |         :         |       4 :       4
-Nets              |         :         |         :         |       0 :       0
-==================+=========+=========+=========+=========+=========+========
-
-+===[inv]=====================================================================================================
-|                                           INITIAL CORRESPONDENCES                                           
-+=============================================================================================================
-
-Type     | Name
----------+-----------------
-Pin      | IN OUT VD VS
+Side     | Pins
+---------+---------------
+Sch      | CK D Q QN
 
 
 ##############################################################################################################

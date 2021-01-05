@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KALLHALL
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KALLHALL/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1609581271_31650
+"Job Signature" internal none IPVS_1609886328_8540
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KALLHALL/pvtech.lib
@@ -12,31 +12,30 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609581273
+"PVS Job Time" internal none 1609886330
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
 "Control File" input text /home/saul/projects/KALLHALL/lvs_runs/pvslvsctl
 "DFII version" internal none 6.1.8.0
 "Do not check rules files before run" internal none ENABLED
-"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/inv.spi
-"Input Layout" input none OA: TEST_KAL3 inv layout
-"Input Schematic" input none OA: TEST_KAL3 inv schematic
-"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/lvs_runs/inv.gds
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/DFFX1.spi
+"Input Layout" input none OA: KALHALL_STD_LIB DFFX1 layout
+"Input Schematic" input none OA: KALHALL_STD_LIB DFFX1 schematic
+"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/lvs_runs/DFFX1.gds
 "Intermediate GDSII File creation Errors" output none /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
-"Layout Cell Name" internal none inv
+"Layout Cell Name" internal none DFFX1
 "Layout ConvertPin" internal text geometry
-"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/inv.gds
+"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/DFFX1.gds
 "Layout HierDepth" internal none 32
-"Layout Layermap" internal text /pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap
-"Layout Library Name" internal none TEST_KAL3
+"Layout Library Name" internal none KALHALL_STD_LIB
 "Layout MaxVertices" internal none 2048
 "Layout NoConvertHalfWidthPath" input none nil
 "Layout ReplaceBusBitChar" input none nil
 "Layout Scale" internal none 0.0005
-"Layout TechLib" internal none KAL3
-"Layout Top Cell" internal none inv
+"Layout TechLib" internal none KALHALL_STD_LIB
+"Layout Top Cell" internal none DFFX1
 "Layout View Name" internal none layout
 "Output Layout Cellmap I" internal text /home/saul/projects/KALLHALL/lvs_runs/lay_cellMap.txt
 "PIPO Log I" log text  /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
@@ -50,42 +49,41 @@
 "SI OSS Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
 "SI Output" log text  /home/saul/projects/KALLHALL/lvs_runs/SI.OUT
 "SI Setup File" internal text  /home/saul/projects/KALLHALL/lvs_runs/si.env
-"Schematic Cell Name" internal none inv
-"Schematic Library Name" internal none TEST_KAL3
-"Schematic Netlist" output text /home/saul/projects/KALLHALL/lvs_runs/inv.cdl
-"Schematic Top Cell" internal none inv
+"Schematic Cell Name" internal none DFFX1
+"Schematic Library Name" internal none KALHALL_STD_LIB
+"Schematic Netlist" output text /home/saul/projects/KALLHALL/lvs_runs/DFFX1.cdl
+"Schematic Top Cell" internal none DFFX1
 "Schematic View Name" internal none schematic
 "Simulator Mode" internal none auCdl
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609581277
-"Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/inv.rep.cls
+"PVS Job Time" internal none 1609886335
+"Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/DFFX1.rep.cls
 "ERC Result" internal none EMPTY
-"ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/inv.sum
-"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/inv.spi
-"Extraction Report" output erc /home/saul/projects/KALLHALL/lvs_runs/inv.rep
+"ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/DFFX1.sum
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/DFFX1.spi
+"Extraction Report" output erc /home/saul/projects/KALLHALL/lvs_runs/DFFX1.rep
 "Extraction Result" internal none CLEAN
 "LVS Report Options" internal none -none
-"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/inv.gds
-"Layout Top Cell" internal none inv
+"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/DFFX1.gds
+"Layout Top Cell" internal none DFFX1
 "PVS Job Mode" internal none lvs
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/saul/projects/KALLHALL/lvs_runs/.technology.rul
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
-"SCONNECT RDB" output rdb /home/saul/projects/KALLHALL/lvs_runs/inv.softchk
-"Schematic Top Cell" internal none inv
+"Schematic Top Cell" internal none DFFX1
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609581278
+"PVS Job Time" internal none 1609886335
 "Comparison Result" internal none MATCH
-"LVS Run Name" internal none inv.rep
+"LVS Run Name" internal none DFFX1.rep
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
 "Schematic Netlist" input text /home/saul/projects/KALLHALL/lvs_runs/netlist
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609581279
+"PVS Job Time" internal none 1609886337

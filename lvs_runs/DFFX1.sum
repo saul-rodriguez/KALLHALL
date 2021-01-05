@@ -1,25 +1,25 @@
 ********************************************************************************
 *** PVS HERC SUMMARY
 ***
-Execute on Date/Time    : Sat Jan  2 10:54:38 2021
+Execute on Date/Time    : Tue Jan  5 23:38:55 2021
 PVS HERC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KALLHALL/lvs_runs/.technology.rul
 Rule Deck Title         :
 Layout System           : GDSII
-Layout Path             : /home/saul/projects/KALLHALL/lvs_runs/inv.gds
+Layout Path             : /home/saul/projects/KALLHALL/lvs_runs/DFFX1.gds
 Current Directory       : /home/saul/projects/KALLHALL/lvs_runs
 User Name:              : saul
 Maximum Results         : 1000
 Maximum Result Vertices : 4096
 Layout Depth            : ALL
 Text Depth              : 0
-Summary File            : inv.sum
+Summary File            : DFFX1.sum
 Geometry Flagging       : ACUTE = NO  ANGLED = NO  SKEW = NO  OFFGRID = NO
                           NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
 Keep Empty Checks       : YES
 Excluded Cells          : 
-Layout Primary Cell     : inv
-LVS Softchk Report      : inv.softchk
+Layout Primary Cell     : DFFX1
+LVS Softchk Report      : DFFX1.softchk
 ASCII ERC Error Report  :
 ERC Results Database    :
 --------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ LAYER Bondpad .................... Total Original Geometry:        0 (       0)
 LAYER Cap3dum .................... Total Original Geometry:        0 (       0)
 LAYER CapMetal ................... Total Original Geometry:        0 (       0)
 LAYER Capdum ..................... Total Original Geometry:        0 (       0)
-LAYER Cont ....................... Total Original Geometry:        7 (       7)
+LAYER Cont ....................... Total Original Geometry:        0 (       0)
 LAYER DIOdummy ................... Total Original Geometry:        0 (       0)
 LAYER IND2dummy .................. Total Original Geometry:        0 (       0)
 LAYER INDdummy ................... Total Original Geometry:        0 (       0)
@@ -48,7 +48,7 @@ LAYER M8Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M9Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M10Resdum .................. Total Original Geometry:        0 (       0)
 LAYER M11Resdum .................. Total Original Geometry:        0 (       0)
-LAYER Metal1 ..................... Total Original Geometry:       19 (      19)
+LAYER Metal1 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal2 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
@@ -65,24 +65,24 @@ LAYER NPN10dum ................... Total Original Geometry:        0 (       0)
 LAYER NPNdummy ................... Total Original Geometry:        0 (       0)
 LAYER Nburied .................... Total Original Geometry:        0 (       0)
 LAYER Nhvt ....................... Total Original Geometry:        0 (       0)
-LAYER Nimp ....................... Total Original Geometry:        2 (       2)
+LAYER Nimp ....................... Total Original Geometry:        0 (       0)
 LAYER Nlvt ....................... Total Original Geometry:        0 (       0)
-LAYER Nwell ...................... Total Original Geometry:        3 (       3)
+LAYER Nwell ...................... Total Original Geometry:        0 (       0)
 LAYER Nzvt ....................... Total Original Geometry:        0 (       0)
-LAYER Oxide ...................... Total Original Geometry:        4 (       4)
+LAYER Oxide ...................... Total Original Geometry:        0 (       0)
 LAYER Oxide_thk .................. Total Original Geometry:        0 (       0)
 LAYER PNPdummy ................... Total Original Geometry:        0 (       0)
 LAYER Phvt ....................... Total Original Geometry:        0 (       0)
-LAYER Pimp ....................... Total Original Geometry:        2 (       2)
+LAYER Pimp ....................... Total Original Geometry:        0 (       0)
 LAYER Plvt ....................... Total Original Geometry:        0 (       0)
-LAYER Poly ....................... Total Original Geometry:        8 (       8)
+LAYER Poly ....................... Total Original Geometry:        0 (       0)
 LAYER Psub ....................... Total Original Geometry:        0 (       0)
 LAYER ResWdum .................... Total Original Geometry:        0 (       0)
 LAYER Resdum ..................... Total Original Geometry:        0 (       0)
 LAYER SiProt ..................... Total Original Geometry:        0 (       0)
 LAYER Via1 ....................... Total Original Geometry:        0 (       0)
 LAYER Via2 ....................... Total Original Geometry:        0 (       0)
-LAYER Via3 ....................... Total Original Geometry:        0 (       0)
+LAYER Via3 ....................... Total Original Geometry:        4 (       4)
 LAYER Via4 ....................... Total Original Geometry:        0 (       0)
 LAYER Via5 ....................... Total Original Geometry:        0 (       0)
 LAYER Via6 ....................... Total Original Geometry:        0 (       0)
@@ -139,8 +139,8 @@ LAYER nwell_pin .................. Total Original Geometry:        0 (       0)
 --- SUMMARY
 ---
 Total CPU Time                    : 0(s)
-Total Real Time                   : 1(s)
-Peak Memory Used                  : 35(M)
-Total Original Geometry           : 45 (45)
+Total Real Time                   : 0(s)
+Peak Memory Used                  : 23(M)
+Total Original Geometry           : 4 (4)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)

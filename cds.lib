@@ -11,3 +11,6 @@ DEFINE KAL3 /home/saul/projects/KALLHALL/KAL3
 DEFINE TEST_KAL3 /home/saul/projects/KALLHALL/TEST_KAL3
 DEFINE TST_LVS /home/saul/projects/KALLHALL/TST_LVS
 DEFINE PCELL_KAL3_DEV /home/saul/projects/KALLHALL/PCELL_KAL3_DEV
+#Removed by ddDeleteObj: DEFINE KAL_STD_CELL /home/saul/projects/KALLHALL/KAL_STD_CELL
+#Removed by ddDeleteObj: DEFINE KALHALL_STD_LIB /home/saul/projects/KALLHALL/KALHALL_STD_LIB
+DEFINE KALHALL_STD_LIB /home/saul/projects/KALLHALL/KALHALL_STD_LIB

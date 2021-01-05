@@ -1,3 +1,1 @@
-TEST_KAL3 inv layout inv
-KAL3 nmos4 layout nmos4
-KAL3 pmos4 layout pmos4
+KALHALL_STD_LIB DFFX1 layout DFFX1

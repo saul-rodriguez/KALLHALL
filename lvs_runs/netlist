@@ -1,10 +1,10 @@
 ************************************************************************
 * auCdl Netlist:
 * 
-* Library Name:  TEST_KAL3
-* Top Cell Name: inv
+* Library Name:  KALHALL_STD_LIB
+* Top Cell Name: DFFX1
 * View Name:     schematic
-* Netlisted on:  Jan  2 10:54:34 2021
+* Netlisted on:  Jan  5 23:38:52 2021
 ************************************************************************
 
 *.BIPOLAR
@@ -18,17 +18,19 @@
 *.MEGA
 .PARAM
 
+*.GLOBAL VDD!
++        VSS!
 
+*.PIN VDD!
+*+    VSS!
 
 ************************************************************************
-* Library Name: TEST_KAL3
-* Cell Name:    inv
+* Library Name: KALHALL_STD_LIB
+* Cell Name:    DFFX1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT inv IN OUT VD VS
-*.PININFO IN:B OUT:B VD:B VS:B
-MM0 OUT IN VS VS g45n1svt W=2u L=1u m=1
-MM1 OUT IN VD VD g45p1svt W=2u L=1u m=1
+.SUBCKT DFFX1 CK D Q QN
+*.PININFO CK:I D:I Q:O QN:O
 .ENDS
 

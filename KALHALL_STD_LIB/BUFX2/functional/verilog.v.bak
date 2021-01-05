@@ -1,0 +1,6 @@
+//Verilog HDL for "KALHALL_STD_LIB", "BUFX2" "functional"
+
+
+module BUFX2 ( );
+
+endmodule

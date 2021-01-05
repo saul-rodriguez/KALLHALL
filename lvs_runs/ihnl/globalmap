@@ -1,8 +1,10 @@
 CADENCE IHNL11140
 $model
-TEST_KAL3/inv/schematic inv
+KALHALL_STD_LIB/DFFX1/schematic DFFX1
 $endmodel
 $net
+VSS! VSS!
+VDD! VDD!
 $endnet
 $param
 $endparam

@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : inv.rep
-ERC Summary File         : inv.sum
-LVS Comparison Report    : inv.rep.cls
-LVS Softchk Report       : inv.softchk
-Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/inv.gds ("inv")
+Report File Name         : DFFX1.rep
+ERC Summary File         : DFFX1.sum
+LVS Comparison Report    : DFFX1.rep.cls
+LVS Softchk Report       : DFFX1.softchk
+Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/DFFX1.gds ("DFFX1")
 User Name                : saul
-Creation Time            : Sat Jan  2 10:54:38 2021
+Creation Time            : Tue Jan  5 23:38:55 2021
 Current directory        : /home/saul/projects/KALLHALL/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -23,11 +23,6 @@ PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 			*****************************************************
 
 
-    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
-    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
-    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)
 
 Clean cell list (added by extraction report parser )
- for cell "inv"
- for cell "nmos4"
- for cell "pmos4"
+ for cell "DFFX1"

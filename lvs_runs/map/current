@@ -1,14 +1,15 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "inv"
+  blockName "DFFX1"
   repList "auCdl schematic"
   stopList "auCdl"
+  globalList "VDD! VSS!"
   hierDelim "."
   netlistDir "/home/saul/projects/KALLHALL/lvs_runs/"
  )
 ( model
-( "TEST_KAL3/inv/schematic" "inv" )
+( "KALHALL_STD_LIB/DFFX1/schematic" "DFFX1" )
  )
-( "inv" "ihnl/cds0/map" )
+( "DFFX1" "ihnl/cds0/map" )
  )

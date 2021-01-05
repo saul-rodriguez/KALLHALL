@@ -1,0 +1,6 @@
+//Verilog HDL for "KALHALL_STD_LIB", "INVX1" "functional"
+
+
+module INVX1 ( );
+
+endmodule

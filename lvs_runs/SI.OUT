@@ -5,7 +5,7 @@ Running simulation in directory: "/home/saul/projects/KALLHALL/lvs_runs/".
 INFO (TECH-150003): The technology database "basic" has been automatically
 updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
-End netlisting Dec 30 19:56:25 2020
+End netlisting Jan  2 10:54:34 2021
 
 Running simin
 
@@ -13,8 +13,8 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Dec 30 19:56:25 2020
+Begin simulation:    Jan  2 10:54:34 2021
 
 auCdl netlisting completed
-End simulation:      Dec 30 19:56:25 2020
+End simulation:      Jan  2 10:54:34 2021
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.

@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KALLHALL
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KALLHALL/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1609354583_7845
+"Job Signature" internal none IPVS_1609581271_31650
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KALLHALL/pvtech.lib
@@ -12,7 +12,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609354584
+"PVS Job Time" internal none 1609581273
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
@@ -59,7 +59,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609354588
+"PVS Job Time" internal none 1609581277
 "Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/inv.rep.cls
 "ERC Result" internal none EMPTY
 "ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/inv.sum
@@ -79,7 +79,7 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609354589
+"PVS Job Time" internal none 1609581278
 "Comparison Result" internal none MATCH
 "LVS Run Name" internal none inv.rep
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
@@ -88,4 +88,4 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1609354591
+"PVS Job Time" internal none 1609581279

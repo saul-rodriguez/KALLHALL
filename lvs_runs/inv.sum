@@ -1,7 +1,7 @@
 ********************************************************************************
 *** PVS HERC SUMMARY
 ***
-Execute on Date/Time    : Wed Dec 30 19:56:29 2020
+Execute on Date/Time    : Sat Jan  2 10:54:38 2021
 PVS HERC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KALLHALL/lvs_runs/.technology.rul
 Rule Deck Title         :
@@ -139,7 +139,7 @@ LAYER nwell_pin .................. Total Original Geometry:        0 (       0)
 --- SUMMARY
 ---
 Total CPU Time                    : 0(s)
-Total Real Time                   : 0(s)
+Total Real Time                   : 1(s)
 Peak Memory Used                  : 35(M)
 Total Original Geometry           : 45 (45)
 Total ERC RuleChecks              : 0

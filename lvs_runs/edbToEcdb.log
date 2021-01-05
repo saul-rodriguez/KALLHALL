@@ -3,7 +3,7 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : inv_28844.db
+EDB Library dir : inv_2272.db
 ECDB dir        : ./
 Top Cell        : inv
 CDL netlist     : svdb/inv.net
@@ -13,4 +13,4 @@ Dependency map  : inv.lmap.perc
 Lvs file        : svdb/inv.lvsfile
 Float net file : .inv.info.softchk
 debug           : 0
-Source Library  : inv_28844
+Source Library  : inv_2272

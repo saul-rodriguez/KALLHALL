@@ -31,38 +31,38 @@ layerDefinitions(
 ;********************************
 viaDefs(
 
- ;customViaDefs(
+ customViaDefs(
  ;( viaDefName       libName     cellName viewName layer1 layer2 resistancePerCut)
  ;( ----------       -------     -------- -------- ------ ------ ----------------)
- ; ( M2_M1_HV   	     gsclib045_tech M2_M1_HV       via Metal1 Metal2     0.0)
- ; ( M2_M1_VV         gsclib045_tech M2_M1_VV       via Metal1 Metal2     0.0)
- ; ( M2_M1_VH         gsclib045_tech M2_M1_VH       via Metal1 Metal2     0.0)
- ; ( M2_M1_HH         gsclib045_tech M2_M1_HH       via Metal1 Metal2     0.0)
+    ( M2_M1_HV         KALLHALL_STD_LIB2 M2_M1_HV       via Metal1 Metal2     0.0)
+    ( M2_M1_VV         KALLHALL_STD_LIB2 M2_M1_VV       via Metal1 Metal2     0.0)
+    ( M2_M1_VH         KALLHALL_STD_LIB2 M2_M1_VH       via Metal1 Metal2     0.0)
+    ( M2_M1_HH         KALLHALL_STD_LIB2 M2_M1_HH       via Metal1 Metal2     0.0)
  ;  ( M2_M1_2x1_HV_E  gsclib045_tech M2_M1_2x1_HV_E via Metal1 Metal2 0.0)
  ;  ( M2_M1_2x1_HV_W  gsclib045_tech M2_M1_2x1_HV_W via Metal1 Metal2 0.0)
  ;  ( M2_M1_1x2_HV_N  gsclib045_tech M2_M1_1x2_HV_N via Metal1 Metal2 0.0)
  ;  ( M2_M1_1x2_HV_S  gsclib045_tech M2_M1_1x2_HV_S via Metal1 Metal2 0.0)
- ;  ( M3_M2_VH        gsclib045_tech M3_M2_VH       via Metal2 Metal3 0.0)
- ;  ( M3_M2_HH        gsclib045_tech M3_M2_HH       via Metal2 Metal3 0.0)
- ;  ( M3_M2_HV        gsclib045_tech M3_M2_HV       via Metal2 Metal3 0.0)
- ;  ( M3_M2_VV        gsclib045_tech M3_M2_VV       via Metal2 Metal3 0.0)
+    ( M3_M2_VH        KALLHALL_STD_LIB2 M3_M2_VH       via Metal2 Metal3 0.0)
+    ( M3_M2_HH        KALLHALL_STD_LIB2 M3_M2_HH       via Metal2 Metal3 0.0)
+    ( M3_M2_HV        KALLHALL_STD_LIB2 M3_M2_HV       via Metal2 Metal3 0.0)
+    ( M3_M2_VV        KALLHALL_STD_LIB2 M3_M2_VV       via Metal2 Metal3 0.0)
  ;  ( M3_M2_M_NH      gsclib045_tech M3_M2_M_NH     via Metal2 Metal3 0.0)
  ;  ( M3_M2_M_SH      gsclib045_tech M3_M2_M_SH     via Metal2 Metal3 0.0)
  ;  ( M3_M2_2x1_VH_E  gsclib045_tech M3_M2_2x1_VH_E via Metal2 Metal3 0.0)
  ;  ( M3_M2_2x1_VH_W  gsclib045_tech M3_M2_2x1_VH_W via Metal2 Metal3 0.0)
  ;  ( M3_M2_1x2_VH_N  gsclib045_tech M3_M2_1x2_VH_N via Metal2 Metal3 0.0)
  ;  ( M3_M2_1x2_VH_S  gsclib045_tech M3_M2_1x2_VH_S via Metal2 Metal3 0.0)
- ;  ( M4_M3_HV        gsclib045_tech M4_M3_HV       via Metal3 Metal4 0.0)
- ;  ( M4_M3_VV        gsclib045_tech M4_M3_VV       via Metal3 Metal4 0.0)
- ;  ( M4_M3_VH        gsclib045_tech M4_M3_VH       via Metal3 Metal4 0.0)
- ;  ( M4_M3_HH        gsclib045_tech M4_M3_HH       via Metal3 Metal4 0.0)
+    ( M4_M3_HV        KALLHALL_STD_LIB2 M4_M3_HV       via Metal3 Metal4 0.0)
+    ( M4_M3_VV        KALLHALL_STD_LIB2 M4_M3_VV       via Metal3 Metal4 0.0)
+    ( M4_M3_VH        KALLHALL_STD_LIB2 M4_M3_VH       via Metal3 Metal4 0.0)
+    ( M4_M3_HH        KALLHALL_STD_LIB2 M4_M3_HH       via Metal3 Metal4 0.0)
  ;  ( M4_M3_M_EV      gsclib045_tech M4_M3_M_EV     via Metal3 Metal4 0.0)
  ;  ( M4_M3_M_WV      gsclib045_tech M4_M3_M_WV     via Metal3 Metal4 0.0)
  ;  ( M4_M3_2x1_HV_E  gsclib045_tech M4_M3_2x1_HV_E via Metal3 Metal4 0.0)
  ;  ( M4_M3_2x1_HV_W  gsclib045_tech M4_M3_2x1_HV_W via Metal3 Metal4 0.0)
  ;  ( M4_M3_1x2_HV_N  gsclib045_tech M4_M3_1x2_HV_N via Metal3 Metal4 0.0)
  ;  ( M4_M3_1x2_HV_S  gsclib045_tech M4_M3_1x2_HV_S via Metal3 Metal4 0.0)
- ;) ;customViaDefs
+ ) ;customViaDefs
 
 ) ;viaDefs
 
@@ -148,7 +148,9 @@ constraintGroups(
    
     interconnect(
      ( validLayers   (Metal1  Metal2  Metal3  Metal4 ) )
-     ( validVias     (M2_M1 M3_M2 M4_M3 ) )
+     ( validVias     (M2_M1_HV M2_M1_VV M2_M1_VH M2_M1_HH
+					 M3_M2_VH M3_M2_HH M3_M2_HV M3_M2_VV 
+					 M4_M3_HV M4_M3_VV M4_M3_VH M4_M3_HH ) )
     ) ;interconnect
   ) ;LEFDefaultRouteSpec
 ) ;constraintGroups

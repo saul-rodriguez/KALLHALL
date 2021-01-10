@@ -1,6 +1,6 @@
 CADENCE IHNL11140
 $model
-KALHALL_STD_LIB/DFFX1/schematic DFFX1
+KALLHALL_STD_LIB2/NOR2X1/schematic NOR2X1
 $endmodel
 $net
 VSS! VSS!

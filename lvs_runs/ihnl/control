@@ -1,5 +1,7 @@
 hnlLastStopCellInfo = '(
-                        )
+                           ( "KAL3" "nmos4" "auCdl" "47" "1610189191" )
+                          ( "KAL3" "pmos4" "auCdl" "47" "1610189208" )
+                       )
 hnlLastMaxNameLength = 60
 hnlLastNamePrefix = "hnl_"
 hnlLastNetNamePrefix = "N"
@@ -74,6 +76,6 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "KALHALL_STD_LIB" "-999999" )
+                    ( "KALLHALL_STD_LIB2" "-999999" )
                   )
 hnlLastDesignVars = '( )

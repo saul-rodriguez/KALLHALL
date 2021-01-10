@@ -1,10 +1,10 @@
 ************************************************************************
 * auCdl Netlist:
 * 
-* Library Name:  KALHALL_STD_LIB
-* Top Cell Name: DFFX1
+* Library Name:  KALLHALL_STD_LIB2
+* Top Cell Name: NOR2X1
 * View Name:     schematic
-* Netlisted on:  Jan  5 23:38:52 2021
+* Netlisted on:  Jan 10 04:43:54 2021
 ************************************************************************
 
 *.BIPOLAR
@@ -25,12 +25,16 @@
 *+    VSS!
 
 ************************************************************************
-* Library Name: KALHALL_STD_LIB
-* Cell Name:    DFFX1
+* Library Name: KALLHALL_STD_LIB2
+* Cell Name:    NOR2X1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT DFFX1 CK D Q QN
-*.PININFO CK:I D:I Q:O QN:O
+.SUBCKT NOR2X1 A B Y
+*.PININFO A:I B:I Y:O
+MM2 Y B VSS! VSS! g45n1svt W=2u L=1u
+MM1 Y A VSS! VSS! g45n1svt W=2u L=1u
+MM3 Y B net018 VDD! g45p1svt W=4u L=1u
+MM0 net018 A VDD! VDD! g45p1svt W=4u L=1u
 .ENDS
 

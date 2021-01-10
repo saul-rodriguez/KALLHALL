@@ -2,7 +2,7 @@
 * CDL Netlist:                                              *
 *                                                           *
 * Cell Name  : DFFX1                                        *
-* Netlisted  : Tue Jan  5 23:38:55 2021                     *
+* Netlisted  : Sun Jan 10 04:10:45 2021                     *
 * PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 *.LDD
@@ -72,8 +72,95 @@
 .ends L
 
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PO_CDNS_1                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PO_CDNS_1 1
+** N=1 EP=1 FDC=0
+.ends M1_PO_CDNS_1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: M1_PIMP_CDNS_3                                  *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt M1_PIMP_CDNS_3 1
+** N=1 EP=1 FDC=0
+.ends M1_PIMP_CDNS_3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos4_CDNS_5                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos4_CDNS_5 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 1 3 2 2 g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1.2e-11 PD=1.3e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=7000 $Y=2000 $dt=8
+.ends pmos4_CDNS_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos4_CDNS_6                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos4_CDNS_6 1 2 3 4
+*.DEVICECLIMB
+** N=4 EP=4 FDC=0
+.ends nmos4_CDNS_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 * Sub cell: DFFX1                                           *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
-.subckt DFFX1
-** N=5 EP=0 FDC=0
+.subckt DFFX1 CK D Q QN VDD VSS
+** N=19 EP=6 FDC=28
+X0 1 M1_PO_CDNS_1 $T=12600 18200 0 0 $X=10600 $Y=16200
+X1 2 M1_PO_CDNS_1 $T=46400 20000 0 0 $X=44400 $Y=18000
+X2 CK M1_PO_CDNS_1 $T=54400 28000 0 0 $X=52400 $Y=26000
+X3 4 M1_PO_CDNS_1 $T=77400 26000 0 0 $X=75400 $Y=24000
+X4 2 M1_PO_CDNS_1 $T=82400 17800 0 0 $X=80400 $Y=15800
+X5 5 M1_PO_CDNS_1 $T=102400 23600 0 0 $X=100400 $Y=21600
+X6 6 M1_PO_CDNS_1 $T=107600 42000 0 0 $X=105600 $Y=40000
+X7 5 M1_PO_CDNS_1 $T=113600 19600 0 0 $X=111600 $Y=17600
+X8 7 M1_PO_CDNS_1 $T=133400 27400 0 0 $X=131400 $Y=25400
+X9 8 M1_PO_CDNS_1 $T=137400 19200 0 0 $X=135400 $Y=17200
+X10 6 M1_PO_CDNS_1 $T=145400 42000 0 0 $X=143400 $Y=40000
+X11 6 M1_PO_CDNS_1 $T=157400 19400 0 0 $X=155400 $Y=17400
+X12 D M1_PO_CDNS_1 $T=170600 41600 0 0 $X=168600 $Y=39600
+X13 6 M1_PO_CDNS_1 $T=180000 21800 0 0 $X=178000 $Y=19800
+X14 5 M1_PO_CDNS_1 $T=196000 22000 0 0 $X=194000 $Y=20000
+X15 VDD M1_PIMP_CDNS_3 $T=46400 50000 0 0 $X=43400 $Y=47000
+X16 VDD M1_PIMP_CDNS_3 $T=78400 50000 0 0 $X=75400 $Y=47000
+X17 VDD M1_PIMP_CDNS_3 $T=133400 50000 0 0 $X=130400 $Y=47000
+X18 VDD M1_PIMP_CDNS_3 $T=179400 50000 0 0 $X=176400 $Y=47000
+X19 QN VDD 1 VSS pmos4_CDNS_5 $T=18400 30200 1 180 $X=2400 $Y=30200
+X20 1 VDD 2 VSS pmos4_CDNS_5 $T=10400 30200 0 0 $X=10400 $Y=30200
+X21 QN VSS 1 VSS nmos4_CDNS_6 $T=18400 5800 1 180 $X=2400 $Y=5800
+X22 1 VSS 2 VSS nmos4_CDNS_6 $T=10400 5800 0 0 $X=10400 $Y=5800
+X23 Q VSS 2 VSS nmos4_CDNS_6 $T=50400 5800 1 180 $X=34400 $Y=5800
+X24 2 VSS 4 VSS nmos4_CDNS_6 $T=82400 5800 1 180 $X=66400 $Y=5800
+X25 8 VSS 7 VSS nmos4_CDNS_6 $T=137400 7200 1 180 $X=121400 $Y=7200
+X26 14 VSS 8 VSS nmos4_CDNS_6 $T=129400 7200 0 0 $X=129400 $Y=7200
+X27 7 14 5 VSS nmos4_CDNS_6 $T=137400 7200 0 0 $X=137400 $Y=7200
+X28 7 15 6 VSS nmos4_CDNS_6 $T=161400 7200 1 180 $X=145400 $Y=7200
+X29 15 VSS D VSS nmos4_CDNS_6 $T=169400 7200 1 180 $X=153400 $Y=7200
+X30 5 VSS 6 VSS nmos4_CDNS_6 $T=178000 7200 0 0 $X=178000 $Y=7200
+M0 VSS 1 QN VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=9400 $Y=7800 $dt=0
+M1 1 2 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=17400 $Y=7800 $dt=0
+M2 VSS 2 Q VSS g45n1svt L=1e-06 W=2e-06 AD=2.461e-11 AS=5e-12 PD=2.84e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=41400 $Y=7800 $dt=0
+M3 6 CK VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=2.461e-11 PD=9e-06 PS=2.84e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=57400 $Y=18000 $dt=0
+M4 VSS 4 2 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=5e-12 PD=1e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=73400 $Y=7800 $dt=0
+M5 19 2 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=81400 $Y=7800 $dt=0
+M6 4 6 19 VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=89400 $Y=7800 $dt=0
+M7 8 5 4 VSS g45n1svt L=1e-06 W=2e-06 AD=1.48e-11 AS=5e-12 PD=1.88e-05 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=111600 $Y=9200 $dt=0
+M8 VSS 7 8 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=1.48e-11 PD=1e-05 PS=1.88e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=128400 $Y=9200 $dt=0
+M9 14 8 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=136400 $Y=9200 $dt=0
+M10 7 5 14 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=144400 $Y=9200 $dt=0
+M11 15 6 7 VSS g45n1svt L=1e-06 W=2e-06 AD=6e-12 AS=6e-12 PD=1e-05 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=152400 $Y=9200 $dt=0
+M12 VSS D 15 VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=6e-12 PD=9e-06 PS=1e-05 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=160400 $Y=9200 $dt=0
+M13 5 6 VSS VSS g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=185000 $Y=9200 $dt=0
+M14 VDD 2 Q VDD g45p1svt L=1e-06 W=4e-06 AD=3.98e-11 AS=1e-11 PD=3.38e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=41400 $Y=32200 $dt=8
+M15 6 CK VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=3.98e-11 PD=1.3e-05 PS=3.38e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=57400 $Y=34000 $dt=8
+M16 VDD 4 2 VDD g45p1svt L=1e-06 W=4e-06 AD=2.74e-11 AS=1e-11 PD=2.94e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=73400 $Y=29600 $dt=8
+M17 17 2 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=2.74e-11 PD=1.4e-05 PS=2.94e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=81400 $Y=29600 $dt=8
+M18 4 5 17 VDD g45p1svt L=1e-06 W=4e-06 AD=3.04e-11 AS=1.2e-11 PD=2.32e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=89400 $Y=29600 $dt=8
+M19 8 6 4 VDD g45p1svt L=1e-06 W=4e-06 AD=3.96e-11 AS=3.04e-11 PD=2.78e-05 PS=2.32e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=106600 $Y=29600 $dt=8
+M20 VDD 7 8 VDD g45p1svt L=1e-06 W=4e-06 AD=2.94e-11 AS=3.96e-11 PD=3.04e-05 PS=2.78e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=128400 $Y=29600 $dt=8
+M21 16 8 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=2.94e-11 PD=1.3e-05 PS=3.04e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=137400 $Y=29600 $dt=8
+M22 7 6 16 VDD g45p1svt L=1e-06 W=4e-06 AD=2.84e-11 AS=1e-11 PD=2.22e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=144400 $Y=29600 $dt=8
+M23 18 5 7 VDD g45p1svt L=1e-06 W=4e-06 AD=1.2e-11 AS=2.84e-11 PD=1.4e-05 PS=2.22e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=160600 $Y=29600 $dt=8
+M24 VDD D 18 VDD g45p1svt L=1e-06 W=4e-06 AD=4.32e-11 AS=1.2e-11 PD=3.68e-05 PS=1.4e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=168600 $Y=29600 $dt=8
+M25 5 6 VDD VDD g45p1svt L=1e-06 W=4e-06 AD=1.52e-11 AS=4.32e-11 PD=1.56e-05 PS=3.68e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=185000 $Y=29600 $dt=8
 .ends DFFX1

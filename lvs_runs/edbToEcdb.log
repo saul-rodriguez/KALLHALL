@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : DFFX1_21263.db
+EDB Library dir : NOR2X1_32391.db
 ECDB dir        : ./
-Top Cell        : DFFX1
-CDL netlist     : svdb/DFFX1.net
-Layer map file  : svdb/DFFX1.ecdbmap
-Text map file   : svdb/DFFX1.ports
-Dependency map  : DFFX1.lmap.perc
-Lvs file        : svdb/DFFX1.lvsfile
-Float net file : .DFFX1.info.softchk
+Top Cell        : NOR2X1
+CDL netlist     : svdb/NOR2X1.net
+Layer map file  : svdb/NOR2X1.ecdbmap
+Text map file   : svdb/NOR2X1.ports
+Dependency map  : NOR2X1.lmap.perc
+Lvs file        : svdb/NOR2X1.lvsfile
+Float net file : .NOR2X1.info.softchk
 debug           : 0
-Source Library  : DFFX1_21263
+Source Library  : NOR2X1_32391

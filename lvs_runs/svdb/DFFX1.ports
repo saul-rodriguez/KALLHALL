@@ -1,2 +1,8 @@
 # SVDB: Port Table (ports)
 # SVDB: Layout Primary DFFX1
+CK 3 CK 54400 28400 metal1_conn
+D 9 D 170600 43200 metal1_conn
+VSS 12 VSS 4400 200 metal1_conn
+VDD 10 VDD 4600 56400 metal1_conn
+Q 13 Q 38400 28200 metal1_conn
+QN 11 QN 4000 20800 metal1_conn

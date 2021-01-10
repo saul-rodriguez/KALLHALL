@@ -1,2 +1,7 @@
-1609886338 0 1609886338 "/home/saul/projects/KALLHALL/lvs_runs" "lvsbrowser" "" "" "" "/home/saul/projects/KALLHALL/lvs_runs/" "auCdl" "auCdl schematic" "/home/saul/projects/KALLHALL/lvs_runs/lay_cellMap.txt" "" "" "" "" true
+1610250242 0 1610250242 "/home/saul/projects/KALLHALL/lvs_runs" "lvsbrowser" "" "" "" "/home/saul/projects/KALLHALL/lvs_runs/" "auCdl" "auCdl schematic" "/home/saul/projects/KALLHALL/lvs_runs/lay_cellMap.txt" "" "" "" "" true
+1610250209 0 1610250209 "/home/saul/projects/KALLHALL/drc_runs/NOR2X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1610249857 0 1610249857 "/home/saul/projects/KALLHALL/drc_runs/NAND2X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1610249443 0 1610249443 "/home/saul/projects/KALLHALL/drc_runs/INVX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1610248972 0 1610248972 "/home/saul/projects/KALLHALL/drc_runs/BUFX2.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1610248200 0 1610248200 "/home/saul/projects/KALLHALL/drc_runs/DFFX1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1609354156 0 1609354156 "/home/saul/projects/KALLHALL/erc_runs" "lvsbrowser" "" "" "" "" "" "" "/home/saul/projects/KALLHALL/erc_runs/lay_cellMap.txt" "" "" "" "" true

@@ -1,4 +1,5 @@
 SOFTINCLUDE /pkg/cadence/installs/IC618/share/cdssetup/cds.lib
+INCLUDE $IUSHOME/tools/inca/files/cds.lib
 #Removed by ddDeleteObj: DEFINE KALLHALL /home/saul/projects/KALLHALL/KALLHALL
 #Removed by ddDeleteObj: DEFINE KALLHALL /home/saul/projects/KALLHALL/KALLHALL
 DEFINE KAL /home/saul/projects/KALLHALL/KAL
@@ -15,3 +16,4 @@ DEFINE PCELL_KAL3_DEV /home/saul/projects/KALLHALL/PCELL_KAL3_DEV
 #Removed by ddDeleteObj: DEFINE KALHALL_STD_LIB /home/saul/projects/KALLHALL/KALHALL_STD_LIB
 DEFINE KALHALL_STD_LIB /home/saul/projects/KALLHALL/KALHALL_STD_LIB
 DEFINE KALLHALL_STD_LIB2 /home/saul/projects/KALLHALL/KALLHALL_STD_LIB2
+DEFINE TEST_KALLHALL_STD_LIB2 /home/saul/projects/KALLHALL/TEST_KALLHALL_STD_LIB2

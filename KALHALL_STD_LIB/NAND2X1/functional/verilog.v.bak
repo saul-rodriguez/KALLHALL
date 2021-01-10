@@ -1,6 +1,0 @@
-//Verilog HDL for "KALHALL_STD_LIB", "NAND2X1" "functional"
-
-
-module NAND2X1 ( );
-
-endmodule

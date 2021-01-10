@@ -1,6 +1,0 @@
-//Verilog HDL for "KALHALL_STD_LIB", "NOR2X1" "functional"
-
-
-module NOR2X1 ( );
-
-endmodule

@@ -173,10 +173,10 @@ siteDefs(
  scalarSiteDefs(
  ;( siteDefName          type 	width  height  symInX symInY symInR90)
  ;( -----------          ---- 	-----  ------  ------ ------ -------)
-  ( CoreSite             core 	10.0     20.0    nil nil nil)
+  ( CoreSite             core 	10.0     28.0    nil nil nil)
   ( IOSite               pad  	1.0   240.0     nil nil nil)
   ( CornerSite           pad		240.0 240.0     nil nil nil)
-  ( CoreSiteDouble       core 	10.0     40.0    nil nil nil)
+  ( CoreSiteDouble       core 	10.0     56.0    nil nil nil)
  ) ;scalarSiteDefs
 
 ) ;siteDefs

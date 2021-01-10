@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
 \o Sub version:		sub-version  s061 
-\o Arguments:		-unmapped -mpssession virtuoso5986 -mpshost s2424 
+\o Arguments:		-unmapped -mpssession virtuoso5130 -mpshost s2424 
 \o Working Directory:	s2424:/home/saul/projects/KALLHALL
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -12,628 +12,1237 @@
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(3033 31 751 768))
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(2946 13 751 768))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALHALL_STD_LIB"
+\a lmgrLogShowPopup("mainListPopup0" 46 43 2 "KALHALL_STD_LIB")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(2998 145 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(3172 213 278 289))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting 1 library.
+\o Deleting library "KALHALL_STD_LIB".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrResizeWindow(workingDialogForm list(3177 291 268 133))
+\o Deleted library 'KALHALL_STD_LIB'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Delete of library "KALHALL_STD_LIB" succeeded.
+\o Deletion of library done.
+\a nrResizeWindow(deleteForm list(2998 115 627 425))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3177 261 268 133))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(3058 78 507 559))
+\a NewLibShell->newLibNameText->value = "KALLHALL_STD_LIB_TECH"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "KALLHALL_STD_LIB_TECH" at /home/saul/projects/KALLHALL/KALLHALL_STD_LIB_TECH.
+\a nrResizeWindow(workingDialogForm list(3177 321 375 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3177 291 375 133))
+\a nrResizeWindow(NewLibShell list(3058 48 507 559))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->FileNewLibButton->value = t
+\a NewLibShell->newLibNameText->value = ""
+\a NewLibShell->QLineEdit1->value = ""
+\a NewLibShell->QLineEdit1->value = "/home/saul/projects/KALLHALL"
+\a nrSetWindowVisibility(NewLibShell->subDialog "show")
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(3058 108 507 559))
+\a NewLibShell->newLibNameText->value = "KALLHALL_STD_LIB"
+\a NewLibShell->newLibOKButton->value = t
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "KALLHALL_STD_LIB" at /home/saul/projects/KALLHALL/KALLHALL_STD_LIB.
+\a nrResizeWindow(workingDialogForm list(3124 321 375 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a nrResizeWindow(workingDialogForm list(3124 291 375 133))
+\a nrResizeWindow(NewLibShell list(3058 78 507 559))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a lmgrLogShowPopup("mainListPopup1" 28 9 2 "BUFX2")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "BUFX2"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "BUFX2"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetWindowVisibility(copyCellForm "show")
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
 \a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->cellListBox->value = "DFFX1"
+\a cdsLibManager->cellLineEdit->value = "DFFX1"
+\a lmgrLogShowPopup("mainListPopup1" 23 24 2 "DFFX1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "DFFX1"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "DFFX1"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy failed - check the CDS.log for details.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 62 22 2 "KALLHALL_STD_LIB")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a lmgrLogShowPopup("mainListPopup1" 26 11 2 "BUFX2")
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 82 27 2 "KALLHALL_STD_LIB")
+\a cdsLibManager->editChangeRefsButton->value = t
+\a nrSetCurrentWindow(changeRefDialog)
+\a nrResizeWindow(changeRefDialog list(2966 91 690 533))
+\a changeRefDialog->inLibsListWidget->value = '("KALLHALL_STD_LIB" )
+\a changeRefDialog->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(changeRefDialog list(2966 61 690 533))
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup1" 28 8 2 "BUFX2")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyFromCell->value = "BUFX2"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToCell->value = "BUFX2"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB2 KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToCell->value = "BUFX2N"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "BUFX2N"
+\a cdsLibManager->cellLineEdit->value = "BUFX2N"
+\a lmgrLogShowPopup("mainListPopup1" 31 30 2 "BUFX2N")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a lmgrLogShowPopup("mainListPopup2" 54 7 2 "abstract")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a lmgrLogShowPopup("mainListPopup0" 78 25 2 "KALLHALL_STD_LIB")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "BUFX2N"
+\a cdsLibManager->cellLineEdit->value = "BUFX2N"
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
 \a cdsLibManager->cellListBox->value = "BUFX2"
 \a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a cdsLibManager->cellListBox->value = "BUFX2N"
+\a cdsLibManager->cellLineEdit->value = "BUFX2N"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->cellListBox->value = "DFFX1"
+\a cdsLibManager->cellLineEdit->value = "DFFX1"
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 27 23 2 "DFFX1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "DFFX1"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "DFFX1"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "INVX1"
+\a cdsLibManager->cellLineEdit->value = "INVX1"
+\a cdsLibManager->viewListBox->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = "abstract"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 17 40 2 "INVX1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "INVX1"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "INVX1"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_HH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 59 58 2 "M2_M1_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HH"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M2_M1_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_HV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 58 75 2 "M2_M1_HV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M2_M1_HV"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M2_M1_HV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_VH"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 65 91 2 "M2_M1_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M2_M1_VH"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M2_M1_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M2_M1_VV"
+\a cdsLibManager->cellLineEdit->value = "M2_M1_VV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 68 106 2 "M2_M1_VV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M2_M1_VV"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M2_M1_VV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M3_M2_HH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 80 127 2 "M3_M2_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M3_M2_HH"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M3_M2_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "M3_M2_HV"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 72 137 2 "M3_M2_HV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M3_M2_HV"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M3_M2_HV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M3_M2_VH"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 65 159 2 "M3_M2_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M3_M2_VH"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M3_M2_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M3_M2_VV"
+\a cdsLibManager->cellLineEdit->value = "M3_M2_VV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 98 176 2 "M3_M2_VV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M3_M2_VV"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M3_M2_VV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_HH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 42 194 2 "M4_M3_HH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M4_M3_HH"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M4_M3_HH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_HV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_HV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 62 211 2 "M4_M3_HV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M4_M3_HV"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M4_M3_HV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_VH"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VH"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 65 227 2 "M4_M3_VH")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M4_M3_VH"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M4_M3_VH"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->cellListBox->value = "M4_M3_VV"
+\a cdsLibManager->cellLineEdit->value = "M4_M3_VV"
+\a cdsLibManager->viewListBox->value = "via"
+\a cdsLibManager->viewLineEdit->value = "via"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 61 247 2 "M4_M3_VV")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "M4_M3_VV"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "M4_M3_VV"
+\a copyCellForm->ViewsToCopy->value = "via"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
 \a cdsLibManager->cellListBox->value = "NAND2X1"
 \a cdsLibManager->cellLineEdit->value = "NAND2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "NAND2X1"
-\a cdsLibManager->cellLineEdit->value = "NAND2X1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup1" 54 261 2 "NAND2X1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "NAND2X1"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "NAND2X1"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "BUFX2"
-\a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
 \a cdsLibManager->cellListBox->value = "NOR2X1"
 \a cdsLibManager->cellLineEdit->value = "NOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
+\a lmgrLogShowPopup("mainListPopup1" 78 276 2 "NOR2X1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyFromCell->value = "NOR2X1"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB2"
+\a copyCellForm->CopyToCell->value = "NOR2X1"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "DFFX1"
-\a cdsLibManager->cellLineEdit->value = "DFFX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
+\a copyCellForm->SkipLibrariesEdit->value = "*"
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellListBox->value = "NOR2X1"
 \a cdsLibManager->cellLineEdit->value = "NOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->FileNewCVButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a nrSetWindowVisibility(cdsLibManager "show")
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "TEST_KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "test_basic"
-\a cdsLibManager->cellLineEdit->value = "test_basic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "DFFX1"
 \a cdsLibManager->cellLineEdit->value = "DFFX1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a lmgrLogShowPopup("mainListPopup2" 45 8 2 "abstract")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
+\a lmgrLogShowPopup("mainListPopup1" 40 39 2 "DFFX1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "KAL"
+\a copyCellForm->CopyToLibrary->value = "KAL"
+\a copyCellForm->CopyFromLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyFromCell->value = "DFFX1"
+\a copyCellForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a copyCellForm->CopyToCell->value = "DFFX1"
+\a copyCellForm->ViewsToCopy->value = "abstract functional layout schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "KAL KAL3 KALLHALL_STD_LIB2 KALLHALL_STD_LIB_TECH PCELL_KAL3_DEV TEST_KAL3 TEST_KALLHALL_STD_LIB2 TST_LVS US_8ths ahdlLib ambit analogLib avTech basic cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib functional ieee ncinternal ncmodels ncutils rfExamples rfLib rfTlineLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrResizeWindow(copyCellForm list(3067 28 488 659))
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToCell->value = "DFFX1N"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3175 321 273 133))
+\a nrResizeWindow(copyCellForm list(3067 -2 488 659))
+\o Copy succeeded.
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
 \a cdsLibManager->cellListBox->value = "DFFX1"
 \a cdsLibManager->cellLineEdit->value = "DFFX1"
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
 \a nrSetCurrentWindow(cdsLibManager)
-\a lmgrLogShowPopup("mainListPopup2" 47 7 2 "abstract")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3175 291 273 133))
 \a cdsLibManager->cellListBox->value = "BUFX2"
 \a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 43 47 2 "layout")
-\a cdsLibManager->FileOpenButton->value = t
-\o MPS request: edit design
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "DFFX1"
-\a cdsLibManager->cellLineEdit->value = "DFFX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a lmgrLogShowPopup("mainListPopup1" 44 9 2 "BUFX2")
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "BUFX2"
+\a cdsLibManager->cellLineEdit->value = "BUFX2"
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "DFFX1"
-\a cdsLibManager->cellLineEdit->value = "DFFX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a lmgrLogShowPopup("mainListPopup2" 67 9 2 "abstract")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
 \a cdsLibManager->cellListBox->value = "BUFX2"
 \a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup0" 40 28 2 "KALLHALL_STD_LIB")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CopyFromLibrary->value = "KAL"
+\a basicCopyForm->CopyToLibrary->value = "KAL"
+\a basicCopyForm->CopyFromLibrary->value = "KALLHALL_STD_LIB"
+\a basicCopyForm->CopyToLibrary->value = "KALLHALL_STD_LIB"
+\a nrSetWindowVisibility(basicCopyForm "show")
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(3160 199 303 316))
+\a basicCopyForm->CopyToLibrary->value = "KALLHALL_STD_LIB3"
+\a basicCopyForm->ExistenceCheck->value = t
+\a basicCopyForm->UpdateInstances->value = t
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "KALLHALL_STD_LIB3".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a NewLibShell->newLibNameText->value = ""
+\a NewLibShell->newLibNameText->value = "KALLHALL_STD_LIB3"
+\o INFO (CLM-130): Your operation specified a new destination library.\n\nThis dialog requires you to specify the location where \nthe new library's directory will be created when OK'd.\n\nYou will not create a new library if this dialog is cancelled.
+\a nrSetWindowVisibility(NewLibShell->subDialog "show")
+\a nrResizeWindow(workingDialogForm list(3183 321 273 133))
+\a nrResizeWindow(NewLibShell->subDialog list(9 9 441 280))
+\a nrResizeWindow(NewLibShell list(3058 41 507 692))
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(workingDialogForm list(3183 291 273 133))
+\a nrResizeWindow(NewLibShell list(3068 51 507 692))
+\a nrResizeWindow(NewLibShell->subDialog list(9 9 441 255))
+\a NewLibShell->newLibOKButton->value = t
+\o Created new library "KALLHALL_STD_LIB3" at /home/saul/projects/KALLHALL/KALLHALL_STD_LIB3.
+\a nrResizeWindow(workingDialogForm list(3137 321 349 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a lmgrLogShowPopup("mainListPopup2" 48 9 2 "abstract")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "BUFX2"
-\a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->cellListBox->value = "DFFX1"
-\a cdsLibManager->cellLineEdit->value = "DFFX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->cellListBox->value = "INVX1"
-\a cdsLibManager->cellLineEdit->value = "INVX1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->cellListBox->value = "NAND2X1"
-\a cdsLibManager->cellLineEdit->value = "NAND2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 31 43 2 "layout")
-\a cdsLibManager->FileOpenButton->value = t
-\o MPS request: edit design
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "BUFX2"
-\a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a nrResizeWindow(NewLibShell list(3068 21 507 692))
+\a nrResizeWindow(basicCopyForm list(3160 169 303 316))
+\o Batching session updates...
+\o Batching session updates...
+\o Copy succeeded.
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3137 291 349 133))
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->cellListBox->value = "BUFX2N"
+\a cdsLibManager->cellLineEdit->value = "BUFX2N"
+\a lmgrLogShowPopup("mainListPopup1" 26 25 2 "BUFX2N")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(2998 145 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(3177 312 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting cell "BUFX2N" from library "KALLHALL_STD_LIB3".
+\o Deleted cell 'KALLHALL_STD_LIB3/BUFX2N'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 cell done.
+\a nrResizeWindow(workingDialogForm list(3183 321 268 133))
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "BUFX2"
-\a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrResizeWindow(deleteForm list(2998 115 627 425))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3183 291 268 133))
+\a cdsLibManager->cellListBox->value = "DFFX1N"
+\a cdsLibManager->cellLineEdit->value = "DFFX1N"
+\a lmgrLogShowPopup("mainListPopup1" 29 40 2 "DFFX1N")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(2998 145 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(3177 312 268 91))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting cell "DFFX1N" from library "KALLHALL_STD_LIB3".
+\a nrResizeWindow(workingDialogForm list(3177 321 268 133))
+\o Deleted cell 'KALLHALL_STD_LIB3/DFFX1N'.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 cell done.
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "BUFX2"
-\a cdsLibManager->cellLineEdit->value = "BUFX2"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "NAND2X1"
-\a cdsLibManager->cellLineEdit->value = "NAND2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a lmgrLogShowPopup("mainListPopup2" 53 9 2 "abstract")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "NOR2X1"
-\a cdsLibManager->cellLineEdit->value = "NOR2X1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(deleteForm list(2998 115 627 425))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3177 291 268 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup0" 52 59 2 "KALLHALL_STD_LIB3")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
 \a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
 \a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
-\a cdsLibManager->cellListBox->value = "NOR2X1"
-\a cdsLibManager->cellLineEdit->value = "NOR2X1"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "abstract"
-\a cdsLibManager->viewLineEdit->value = "abstract"
-\a lmgrLogShowPopup("mainListPopup2" 76 5 2 "abstract")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB2"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB3"
+\a cdsLibManager->libListBox->value = "KALLHALL_STD_LIB_TECH"
+\a cdsLibManager->libLineEdit->value = "KALLHALL_STD_LIB_TECH"
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
 \o MPS service: shutdown

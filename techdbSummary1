@@ -1,0 +1,617 @@
+
+
+	Report Date/Time:  		                                        Jan 10 10:46:18 2021
+
+	Library Name:          	                                           KALLHALL_STD_LIB2
+	TimeStamp:KALLHALL_STD_LIB2                                               Jan  6 16:47:44 2021
+	  TimeStamp:KAL3                                                          Dec 29 22:30:10 2020
+
+	Cadence Version:       	            1.2011-07-111635 sub-version  IC6.1.8-64b.500.7 
+
+	Tool Enablement Summary:
+
+	Layout                             Incomplete
+	DRD                                Incomplete
+	Toolbox                            Incomplete
+	Optimize                           Incomplete
+	Layout XL                          Incomplete
+	Abstract                           Incomplete
+	DRD-XL                             Incomplete
+	Wire Editor                        Incomplete
+	DRD-GXL                            Incomplete
+	Yield Optimize                     Incomplete
+	VCAR                               Incomplete
+	VSR                                Incomplete
+	Analog Placement                   Incomplete
+	Floorplanner                       Incomplete
+	Modgen                             Incomplete
+	Digital Placement                  Incomplete
+	Migrate                            Incomplete
+	LEF 5.8*                           Incomplete
+	PVS                                Incomplete
+
+	Tool Requirements Summary:
+
+	Tier                           Tool   Check Status     Required Constraints   Req. Constraints Found
+	VLS-L                        Layout     Incomplete                       28                       27
+	                                DRD     Incomplete                       32                       30
+	                            Toolbox     Incomplete                       28                       27
+	                           Optimize     Incomplete                       32                       30
+	VLS-XL                    Layout XL     Incomplete                       28                       27
+	                           Abstract     Incomplete                       32                       30
+	                             DRD-XL     Incomplete                       32                       30
+	                        Wire Editor     Incomplete                       32                       30
+	VLS-GXL                     DRD-GXL     Incomplete                       32                       30
+	                     Yield Optimize     Incomplete                       32                       30
+	                               VCAR     Incomplete                       32                       30
+	                                VSR     Incomplete                       32                       30
+	                   Analog Placement     Incomplete                       32                       30
+	                       Floorplanner     Incomplete                       28                       27
+	                             Modgen     Incomplete                       32                       30
+	                  Digital Placement     Incomplete                       32                       30
+	                            Migrate     Incomplete                       32                       30
+	                           LEF 5.8*     Incomplete                       32                       30
+	                                PVS     Incomplete                       32                       30
+
+	Layer Summary  
+
+	Layer Name     Function             Required Constraints Required Constraints Found
+	Cont           cut                                     2                          2
+	Metal1         metal                                   2                          2
+	Metal2         metal                                   2                          2
+	Metal3         metal                                   2                          2
+	Metal4         metal                                   2                          2
+	Nimp           nplus                                   2                          2
+	Nwell          nwell                                   3                          3
+	Oxide          diff                                    3                          2
+	PWdummy        pwell                                   3                          2
+	Pimp           pplus                                   2                          2
+	Poly           poly                                    3                          3
+	Via1           cut                                     2                          2
+	Via2           cut                                     2                          2
+	Via3           cut                                     2                          2
+
+	Layer Summary For Optional Constraints       
+
+	Layer Name     Function             Optional Constraints Optional Constraints Found
+	Cont           cut                                    61                          5
+	Metal1         metal                                  84                          1
+	Metal2         metal                                  84                          1
+	Metal3         metal                                  84                          1
+	Metal4         metal                                  84                          1
+	Nimp           nplus                                  22                          5
+	Nwell          nwell                                  24                          3
+	Oxide          diff                                   52                          5
+	PWdummy        pwell                                  23                          0
+	Pimp           pplus                                  22                          5
+	Poly           poly                                   59                          7
+	Via1           cut                                    61                          2
+	Via2           cut                                    61                          2
+	Via3           cut                                    61                          2
+
+	Techfile Section Summary: 
+
+	Section                            Errors  Warnings  Notices
+
+	controls                                0         0        3
+
+	layerDefinitions                        0         0        3
+
+	layerRules                              0         1        5
+
+	viaDefs                                 0         0        1
+
+	devices                                 0         3        2
+
+	constraintGroups                        2         1        8
+
+	routingGrids                            0         0       32
+
+	placementGrids                          0         0        0
+
+	Techfile Section Details: 
+
+	Techfile Section:  controls
+
+	    Errors:  none
+
+	    Warnings:  none
+
+	    Notices:
+
+	        Libraries referenced by "KALLHALL_STD_LIB2" are ("KAL3").
+
+	        Default Grid Snap Resulution set to 0.005.
+
+	        View Type Units NOT specified.
+
+	Techfile Section:  layerDefinitions
+
+	    Errors:  none
+
+	    Warnings:  none
+
+	    Notices:
+
+	        *********
+
+	        A hierarchical listing of each derived layers boolean operations will appear at the end of this report....
+
+	        *********
+
+	Techfile Section:  layerRules
+
+	    Errors:  none
+
+	    Warnings:
+
+	        cutClass recommended for process level t.
+
+	    Notices:
+
+	        routingDirections not specified.
+
+	        labelLayers not specified.
+
+	        incompatibleLayers not specified.
+
+	        equivalentLayers not specified.
+
+	        currentDensityTables not specified.
+
+	Techfile Section:  viaDefs
+
+	    Errors:  none
+
+	    Warnings:  none
+
+	    Notices:
+
+	        Custom Via Definitions found
+
+	Techfile Section:  devices
+
+	    Errors:  none
+
+	    Warnings:
+
+	        cdsMos not specified
+
+	        cdsVias not specified
+
+	        Extract Devices not specified
+
+	    Notices:
+
+	        Found tcCreateCDSDeviceClass ("cdsVia").
+
+	        MPP template not specified
+
+	Techfile Section: constraintGroups
+
+		Group: foundry
+
+		    Errors: 		  none
+
+		    Warnings:
+
+		            interconnect constraint errorLayer missing from "foundry" group.
+
+		    Notices:		  none
+
+	Techfile Section: constraintGroups
+
+		Group: LEFSpecialRouteSpec
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        Constraint Group LEFSpecialRouteSpec contains validVias.
+
+	Techfile Section: constraintGroups
+
+		Group: LEFDefaultRouteSpec
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        "verticalPitch" layer ("Metal1") has value 4.0.
+
+		        "verticalPitch" layer ("Metal2") has value 4.0.
+
+		        "verticalPitch" layer ("Metal3") has value 4.0.
+
+		        "verticalPitch" layer ("Metal4") has value 4.0.
+
+		        "verticalOffset" layer ("Metal1") has value 2.0.
+
+		        "verticalOffset" layer ("Metal2") has value 2.0.
+
+		        "verticalOffset" layer ("Metal3") has value 2.0.
+
+		        "verticalOffset" layer ("Metal4") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal1") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal2") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal3") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal4") has value 2.0.
+
+		        "horizontalPitch" layer ("Metal1") has value 4.0.
+
+		        "horizontalPitch" layer ("Metal2") has value 4.0.
+
+		        "horizontalPitch" layer ("Metal3") has value 4.0.
+
+		        "horizontalPitch" layer ("Metal4") has value 4.0.
+
+		        LEFDefaultRouteSpec LEFDefaultRouteSpec validLayers does not contain 'poly in constraint Group.
+
+		        LEFDefaultRouteSpec LEFDefaultRouteSpec validLayers does not contain 'diffusion in constraint Group.
+
+	Techfile Section: constraintGroups
+
+		Group: virtuosoDefaultExtractorSetup
+
+		    Errors: 
+
+		            interconnect constraint validLayers not in "virtuosoDefaultExtractorSetup" group.
+
+		    Warnings:		  none
+
+		    Notices:		  none
+
+	Techfile Section: constraintGroups
+
+		Group: virtuosoDefaultSetup
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        userDefined virtuosoDefaultSetup validLayers does not contain 'diffusion in constraint Group.
+
+	Techfile Section: constraintGroups
+
+		Group: virtuosoDefaultTaper
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        taper virtuosoDefaultTaper validLayers does not contain 'diffusion in constraint Group.
+
+	Techfile Section: constraintGroups
+
+		Group: VLMDefaultSetup
+
+		    Errors: 
+
+		            interconnect constraint validLayers not in "VLMDefaultSetup" group.
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        Constraint Group VLMDefaultSetup contains validVias.
+
+	Techfile Section: constraintGroups
+
+		Group: DFM
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:		  none
+
+	Techfile Section: constraintGroups
+
+		Group: LEFDefaultRouteSpec_gpdk045
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        "verticalPitch" layer ("Metal1") has value 4.0.
+
+		        "verticalPitch" layer ("Metal2") has value 4.0.
+
+		        "verticalPitch" layer ("Metal3") has value 4.0.
+
+		        "verticalPitch" layer ("Metal4") has value 4.0.
+
+		        "verticalOffset" layer ("Metal1") has value 2.0.
+
+		        "verticalOffset" layer ("Metal2") has value 2.0.
+
+		        "verticalOffset" layer ("Metal3") has value 2.0.
+
+		        "verticalOffset" layer ("Metal4") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal1") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal2") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal3") has value 2.0.
+
+		        "horizontalOffset" layer ("Metal4") has value 2.0.
+
+		        "horizontalPitch" layer ("Metal1") has value 4.0.
+
+		        "horizontalPitch" layer ("Metal2") has value 4.0.
+
+		        "horizontalPitch" layer ("Metal3") has value 4.0.
+
+		        "horizontalPitch" layer ("Metal4") has value 4.0.
+
+		        LEFDefaultRouteSpec LEFDefaultRouteSpec_gpdk045 validLayers does not contain 'poly in constraint Group.
+
+		        LEFDefaultRouteSpec LEFDefaultRouteSpec_gpdk045 validLayers does not contain 'diffusion in constraint Group.
+
+	Techfile Section: constraintGroups
+
+		Group: minPRBoundaryInteriorHaloCG
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:		  none
+
+	Techfile Section: constraintGroups
+
+		Group: minProtrusionNumCutCG
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:		  none
+
+	Constraints Report
+
+	Techfile Constraints by Layer
+
+Layer                                              Constraint           Value                               Group  Op Note                                         
+
+Cont                                                 minWidth             1.0                 LEFDefaultRouteSpec                         
+Metal1                                               minWidth             2.0                 LEFDefaultRouteSpec                         
+Metal2                                               minWidth             2.0                 LEFDefaultRouteSpec                         
+Metal3                                               minWidth             2.0                 LEFDefaultRouteSpec                         
+Metal4                                               minWidth             2.0                 LEFDefaultRouteSpec                         
+Poly,Oxide                                 minOverlapDistance            0.12                                 DFM                         
+Via1                                                 minWidth             1.0                 LEFDefaultRouteSpec                         
+Via2                                                 minWidth             1.0                 LEFDefaultRouteSpec                         
+Via3                                                 minWidth             1.0                 LEFDefaultRouteSpec                         
+
+	Constraints Report
+
+	Techfile Layers by Constraint
+
+Constraint                                    Layer                     Value                               Group  Op Note                                         
+
+minOverlapDistance                       Poly,Oxide                      0.12                                 DFM                                                  
+minWidth                                       Cont                       1.0                 LEFDefaultRouteSpec                                                  
+                                             Metal1                       2.0                 LEFDefaultRouteSpec                                                  
+                                             Metal2                       2.0                 LEFDefaultRouteSpec                                                  
+                                             Metal3                       2.0                 LEFDefaultRouteSpec                                                  
+                                             Metal4                       2.0                 LEFDefaultRouteSpec                                                  
+                                               Via1                       1.0                 LEFDefaultRouteSpec                                                  
+                                               Via2                       1.0                 LEFDefaultRouteSpec                                                  
+                                               Via3                       1.0                 LEFDefaultRouteSpec                                                  
+ *********
+ A hierarchical listing of each derived layers boolean operations will appear at the end of this report....
+ *********
+
+
+
+****************************************************************************
+ 
+  The following is a trace of the  boolean operations for each derived layer created
+  " * " indicates a physical layer has been reached
+
+****************************************************************************
+ 
+
+
+d_Met4_noRes
+  not(
+    Metal4 *
+    M4Resdum *
+);d_Met4_noRes
+ 
+d_Met3_noRes
+  not(
+    Metal3 *
+    M3Resdum *
+);d_Met3_noRes
+ 
+d_Met2_noRes
+  not(
+    Metal2 *
+    M2Resdum *
+);d_Met2_noRes
+ 
+d_Met1_noRes
+  not(
+    Metal1 *
+    M1Resdum *
+);d_Met1_noRes
+ 
+globalsubstrate
+  not(
+    substrate *
+    Nwell *
+);globalsubstrate
+ 
+polycutoxide
+  not(
+    Oxide *
+    Poly *
+);polycutoxide
+ 
+noContOverGate
+  and(
+    Cont *
+    gate
+      and(
+        Poly *
+        Oxide *
+    );gate
+);noContOverGate
+ 
+noNpOverPp
+  and(
+    Nimp *
+    Pimp *
+);noNpOverPp
+ 
+imp
+  or(
+    Nimp *
+    Pimp *
+);imp
+ 
+sd_cont
+  and(
+    Cont *
+    Oxide *
+);sd_cont
+ 
+ptap
+  not(
+    pdiff
+      and(
+        Oxide *
+        Pimp *
+    );pdiff
+    Nwell *
+);ptap
+ 
+ntap
+  and(
+    ndiff
+      and(
+        Oxide *
+        Nimp *
+    );ndiff
+    Nwell *
+);ntap
+ 
+sd_pdiff
+  and(
+    pdiff
+      and(
+        Oxide *
+        Pimp *
+    );pdiff
+    Nwell *
+);sd_pdiff
+ 
+sd_ndiff
+  not(
+    ndiff
+      and(
+        Oxide *
+        Nimp *
+    );ndiff
+    Nwell *
+);sd_ndiff
+ 
+pdiff
+  and(
+    Oxide *
+    Pimp *
+);pdiff
+ 
+ndiff
+  and(
+    Oxide *
+    Nimp *
+);ndiff
+ 
+base
+  or(
+    Poly *
+    Oxide *
+);base
+ 
+pgate
+  and(
+    pgate_tmp
+      and(
+        gate
+          and(
+            Poly *
+            Oxide *
+        );gate
+        Pimp *
+    );pgate_tmp
+    Nwell *
+);pgate
+ 
+pgate_tmp
+  and(
+    gate
+      and(
+        Poly *
+        Oxide *
+    );gate
+    Pimp *
+);pgate_tmp
+ 
+ngate
+  not(
+    ngate_tmp
+      and(
+        gate
+          and(
+            Poly *
+            Oxide *
+        );gate
+        Nimp *
+    );ngate_tmp
+    Nwell *
+);ngate
+ 
+ngate_tmp
+  and(
+    gate
+      and(
+        Poly *
+        Oxide *
+    );gate
+    Nimp *
+);ngate_tmp
+ 
+ipoly
+  not(
+    Poly *
+    gate
+      and(
+        Poly *
+        Oxide *
+    );gate
+);ipoly
+ 
+gate
+  and(
+    Poly *
+    Oxide *
+);gate
+ 

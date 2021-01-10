@@ -1,6 +1,0 @@
-//Verilog HDL for "KALHALL_STD_LIB", "DFFX1" "functional"
-
-
-module DFFX1 ( );
-
-endmodule

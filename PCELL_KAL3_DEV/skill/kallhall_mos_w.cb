@@ -1,0 +1,12 @@
+procedure(kallhall_mos_w(param)
+  prog( (w)
+     w = cdfParseFloatString(cdfgData->w->value)
+     when(w>0 
+       printf("Updating parameter wf of MOS")
+	   ftVar = w*1e6;
+	   sprintf( strVar "%.3f" ftVar);
+	   ;;printf(strVar);	
+       cdfgData->wf->value = strVar
+     )
+  )
+)

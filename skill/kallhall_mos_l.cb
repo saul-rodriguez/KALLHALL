@@ -1,0 +1,11 @@
+procedure(kallhall_mos_l(param)
+  prog( (l)
+     l = cdfParseFloatString(cdfgData->l->value)
+     when(l>0 
+       ;;warn("Parameter l is smaller then 1e-6. Setting to minimal value" )
+	   strVar = 2e-6;
+	   sprintf( ftVar "%.2e" strVar);
+       cdfgData->ll->value = strVar
+     )
+  )
+)

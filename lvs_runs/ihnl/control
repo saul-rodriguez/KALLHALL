@@ -76,6 +76,6 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "KALLHALL_STD_LIB2" "-999999" )
+                    ( "KALLHALL_STD_LIB3" "1610274355" )
                   )
 hnlLastDesignVars = '( )

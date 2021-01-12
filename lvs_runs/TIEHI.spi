@@ -1,0 +1,97 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : TIEHI                                        *
+* Netlisted  : Mon Jan 11 23:23:45 2021                     *
+* PVS Version: 16.15-s010 Fri Jun 28 22:24:07 PDT 2019      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(g45n1svt) _nmos1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 1 MN(g45n1hvt) _nmos1v_hvt ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 2 MN(g45n1lvt) _nmos1v_lvt ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 3 MN(g45n1nvt) _nmos_12_native ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 4 MN(g45n2svt) _nmos_25 ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 5 MN(g45n2nvt) _nmos_25_native ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 6 MN(g45ncap1) _nmoscap1v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 7 MN(g45ncap2) _nmoscap2v ndiff_conn(D) poly_conn(G) ndiff_conn(S) psubstrate(B)
+*.DEVTMPLT 8 MP(g45p1svt) _pmos1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 9 MP(g45p1hvt) _pmos1v_hvt pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 10 MP(g45p1lvt) _pmos1v_lvt pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 11 MP(g45p2svt) _pmos2v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 12 MP(g45pcap1) _pmoscap1v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 13 MP(g45pcap2) _pmoscap2v pdiff_conn(D) poly_conn(G) pdiff_conn(S) nwell_conn(B)
+*.DEVTMPLT 14 R(g45rm1) _resm1 metal1_conn(PLUS) metal1_conn(MINUS)
+*.DEVTMPLT 15 R(g45rm2) _resm2 metal2_conn(PLUS) metal2_conn(MINUS)
+*.DEVTMPLT 16 R(g45rm3) _resm3 metal3_conn(PLUS) metal3_conn(MINUS)
+*.DEVTMPLT 17 R(g45rm4) _resm4 metal4_conn(PLUS) metal4_conn(MINUS)
+*.DEVTMPLT 18 R(g45rm5) _resm5 metal5_conn(PLUS) metal5_conn(MINUS)
+*.DEVTMPLT 19 R(g45rm6) _resm6 metal6_conn(PLUS) metal6_conn(MINUS)
+*.DEVTMPLT 20 R(g45rm7) _resm7 metal7_conn(PLUS) metal7_conn(MINUS)
+*.DEVTMPLT 21 R(g45rm8) _resm8 metal8_conn(PLUS) metal8_conn(MINUS)
+*.DEVTMPLT 22 R(g45rm9) _resm9 metal9_conn(PLUS) metal9_conn(MINUS)
+*.DEVTMPLT 23 R(g45rm10) _resm10 metal10_conn(PLUS) metal10_conn(MINUS)
+*.DEVTMPLT 24 R(g45rm11) _resm11 metal11_conn(PLUS) metal11_conn(MINUS)
+*.DEVTMPLT 25 R(g45rsnd) _ressndiff ndiff_conn(PLUS) ndiff_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 26 R(g45rnsnd) _resnsndiff ndiff_conn(PLUS) ndiff_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 27 R(g45rsnp) _ressnpoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 28 R(g45rsnp) _ressnpoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 29 R(g45rnsnp) _resnsnpoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 30 R(g45rnsnp) _resnsnpoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 31 R(g45rspd) _resspdiff pdiff_conn(PLUS) pdiff_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 32 R(g45rnspd) _resnspdiff pdiff_conn(PLUS) pdiff_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 33 R(g45rspp) _ressppoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 34 R(g45rspp) _ressppoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 35 R(g45rnspp) _resnsppoly poly_conn(PLUS) poly_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 36 R(g45rnspp) _resnsppoly_nw poly_conn(PLUS) poly_conn(MINUS) nwell_conn(B)
+*.DEVTMPLT 37 R(g45rnws) _resnwsti nwell_conn(PLUS) nwell_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 38 R(g45rnwo) _resnwoxide nwell_conn(PLUS) nwell_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 39 D(g45nd1svt) _ndio psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 40 D(g45nd1lvt) _ndio_lvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 41 D(g45nd1hvt) _ndio_hvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 42 D(g45nd1nvt) _ndio_nvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 43 D(g45nd2svt) _ndio_2v psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 44 D(g45nd2nvt) _ndio_2v_nvt psubstrate(PLUS) ndiff_conn(MINUS)
+*.DEVTMPLT 45 D(g45pd1svt) _pdio pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 46 D(g45pd1lvt) _pdio_lvt pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 47 D(g45pd1hvt) _pdio_hvt pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 48 D(g45pd2svt) _pdio_2v pdiff_conn(PLUS) nwell_conn(MINUS)
+*.DEVTMPLT 49 Q(g45vpnp2) _vpnp2 psubstrate(C) nwell_conn(B) pdiff_conn(E)
+*.DEVTMPLT 50 Q(g45vpnp5) _vpnp5 psubstrate(C) nwell_conn(B) pdiff_conn(E)
+*.DEVTMPLT 51 Q(g45vpnp10) _vpnp10 psubstrate(C) nwell_conn(B) pdiff_conn(E)
+*.DEVTMPLT 52 Q(g45vnpn2) _npn2 nwell_conn(C) psubstrate(B) npn_emit(E)
+*.DEVTMPLT 53 Q(g45vnpn5) _npn5 nwell_conn(C) psubstrate(B) npn_emit(E)
+*.DEVTMPLT 54 Q(g45vnpn10) _npn10 nwell_conn(C) psubstrate(B) npn_emit(E)
+*.DEVTMPLT 55 C(g45cmim) _mimcap CapMetal(PLUS) metal10_conn(MINUS) psubstrate(B)
+*.DEVTMPLT 56 L(g45inda) _ind_a ind10(PLUS) ind11(MINUS) psubstrate(B)
+*.DEVTMPLT 57 L(g45inds) _ind_s ind11(PLUS) ind11(MINUS) psubstrate(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: L                                               *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt L PLUS MINUS B
+.ends L
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: pmos4_CDNS_4                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt pmos4_CDNS_4 1 2 3
+** N=4 EP=3 FDC=1
+M0 1 3 2 2 g45p1svt L=1e-06 W=4e-06 AD=1e-11 AS=1e-11 PD=1.3e-05 PS=1.3e-05 fw=4e-06 sa=2e-06 sb=2e-06 sca=1.4 scb=1.24841e-05 scc=2.70526e-10 $X=7000 $Y=2000 $dt=8
+.ends pmos4_CDNS_4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nmos4_CDNS_5                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nmos4_CDNS_5 1 2
+** N=2 EP=2 FDC=1
+M0 1 1 2 2 g45n1svt L=1e-06 W=2e-06 AD=5e-12 AS=5e-12 PD=9e-06 PS=9e-06 fw=2e-06 sa=2e-06 sb=2e-06 sca=1.66667 scb=1.49811e-05 scc=3.24632e-10 $X=7000 $Y=2000 $dt=0
+.ends nmos4_CDNS_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: TIEHI                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt TIEHI VDD VSS Y
+** N=4 EP=3 FDC=2
+X0 Y VDD 3 pmos4_CDNS_4 $T=2000 24200 0 0 $X=2000 $Y=24200
+X1 3 VSS nmos4_CDNS_5 $T=2000 5800 0 0 $X=2000 $Y=5800
+.ends TIEHI

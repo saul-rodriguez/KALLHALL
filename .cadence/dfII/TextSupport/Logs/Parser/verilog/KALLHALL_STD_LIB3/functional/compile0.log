@@ -1,0 +1,20 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	18.03-s018: Started on Jan 12, 2021 at 00:19:39 CET
+xmvlog
+    -use5x
+    -SPECIFICUNIT TIEHI
+    -zparse /tmp/vamsZparzb8966
+    -NOWARN DLNOHV
+    -work KALLHALL_STD_LIB3
+    -view functional
+    -nostdout
+    -logfile /home/saul/projects/KALLHALL/.cadence/dfII/TextSupport/Logs/Parser/verilog/KALLHALL_STD_LIB3/functional/compile0.log
+    -messages
+    -cdslib /home/saul/projects/KALLHALL/cds.lib
+    /home/saul/projects/KALLHALL/KALLHALL_STD_LIB3/TIEHI/functional/verilog.v
+
+file: /home/saul/projects/KALLHALL/KALLHALL_STD_LIB3/TIEHI/functional/verilog.v
+	module KALLHALL_STD_LIB3.TIEHI:functional
+		errors: 0, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Jan 12, 2021 at 00:19:39 CET  (total: 00:00:00)

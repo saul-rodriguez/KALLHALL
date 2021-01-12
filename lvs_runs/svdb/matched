@@ -3,31 +3,31 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Sun Jan 10 04:44:00 2021
-#####  ERC Summary File              :   NOR2X1.sum
-#####  Extraction Report File        :   NOR2X1.rep
-#####  Comparison Report File        :   NOR2X1.rep.cls
-#####  Top Cell                      :   NOR2X1  <vs>  NOR2X1
+#####  NVN Run Start                 :   Tue Jan 12 00:16:00 2021
+#####  ERC Summary File              :   TIELO.sum
+#####  Extraction Report File        :   TIELO.rep
+#####  Comparison Report File        :   TIELO.rep.cls
+#####  Top Cell                      :   TIELO  <vs>  TIELO
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   KALLHALL_STD_LIB2 NOR2X1 layout
-#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/NOR2X1.cdl (cdl)
+#####  Layout Design                 :   KALLHALL_STD_LIB3 TIELO layout
+#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/TIELO.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   NOR2X1.rep.cps
+#####  Pin Swap File                 :   TIELO.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   35.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   232.39MB
+#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
+#####  NVN Peak Memory Usage         :   235.45MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
-#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
-#####  LVS Total Peak Memory Usage   :   232.39MB
+#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
+#####  LVS Total Peak Memory Usage   :   235.45MB
 #####  
 ##############################################################################################################
 

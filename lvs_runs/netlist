@@ -1,10 +1,10 @@
 ************************************************************************
 * auCdl Netlist:
 * 
-* Library Name:  KALLHALL_STD_LIB2
-* Top Cell Name: NOR2X1
+* Library Name:  KALLHALL_STD_LIB3
+* Top Cell Name: TIELO
 * View Name:     schematic
-* Netlisted on:  Jan 10 04:43:54 2021
+* Netlisted on:  Jan 12 00:15:55 2021
 ************************************************************************
 
 *.BIPOLAR
@@ -18,23 +18,21 @@
 *.MEGA
 .PARAM
 
-*.GLOBAL VDD!
-+        VSS!
+*.GLOBAL VSS!
++        VDD!
 
-*.PIN VDD!
-*+    VSS!
+*.PIN VSS!
+*+    VDD!
 
 ************************************************************************
-* Library Name: KALLHALL_STD_LIB2
-* Cell Name:    NOR2X1
+* Library Name: KALLHALL_STD_LIB3
+* Cell Name:    TIELO
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT NOR2X1 A B Y
-*.PININFO A:I B:I Y:O
-MM2 Y B VSS! VSS! g45n1svt W=2u L=1u
-MM1 Y A VSS! VSS! g45n1svt W=2u L=1u
-MM3 Y B net018 VDD! g45p1svt W=4u L=1u
-MM0 net018 A VDD! VDD! g45p1svt W=4u L=1u
+.SUBCKT TIELO Y
+*.PININFO Y:O
+MM1 Y net4 VSS! VSS! g45n1svt W=2u L=1u
+MM0 net4 net4 VDD! VDD! g45p1svt W=4u L=1u
 .ENDS
 

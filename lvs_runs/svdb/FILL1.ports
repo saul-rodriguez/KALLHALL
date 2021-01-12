@@ -1,0 +1,4 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary FILL1
+VSS 1 VSS 7200 400 metal1_conn
+VDD 2 VDD 9000 56600 metal1_conn

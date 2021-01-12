@@ -1,0 +1,5 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary TIEHI
+Y 1 Y 14000 29400 metal1_conn
+VSS 4 VSS 7200 400 metal1_conn
+VDD 2 VDD 9000 56600 metal1_conn

@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : NOR2X1.rep
-ERC Summary File         : NOR2X1.sum
-LVS Comparison Report    : NOR2X1.rep.cls
-LVS Softchk Report       : NOR2X1.softchk
-Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/NOR2X1.gds ("NOR2X1")
+Report File Name         : TIELO.rep
+ERC Summary File         : TIELO.sum
+LVS Comparison Report    : TIELO.rep.cls
+LVS Softchk Report       : TIELO.softchk
+Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds ("TIELO")
 User Name                : saul
-Creation Time            : Sun Jan 10 04:43:58 2021
+Creation Time            : Tue Jan 12 00:15:58 2021
 Current directory        : /home/saul/projects/KALLHALL/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 
@@ -28,9 +28,6 @@ PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
     LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)
 
 Clean cell list (added by extraction report parser )
- for cell "M1_NWELL_CDNS_1"
- for cell "M1_PO_CDNS_3"
- for cell "M1_PSUB_CDNS_2"
- for cell "NOR2X1"
+ for cell "TIELO"
  for cell "nmos4_CDNS_4"
  for cell "pmos4_CDNS_5"

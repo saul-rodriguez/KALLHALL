@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 10/08/2019 19:40 (ip-172-18-22-57) $
           : sub-version  IC6.1.8-64b.500.7 
-Started at: 10-Jan-2021  04:43:53
+Started at: 12-Jan-2021  00:15:54
 User Name : saul
 Host Name : s2424
 Directory : /home/saul/projects/KALLHALL
@@ -10,7 +10,7 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KALLHALL/lvs_runs/NOR2X1.gds' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/KALLHALL/lvs_runs/TIELO.gds' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap
 WARNING (XSTRM-32): The layer map file '/pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap' contains unknown layer 'Oxide_thk' at line number '5' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
 WARNING (XSTRM-32): The layer map file '/pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap' contains unknown layer 'Nhvt' at line number '8' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
@@ -93,13 +93,13 @@ WARNING (XSTRM-32): The layer map file '/pkg/cadence_pdks/gpdk045/gpdk045/gpdk04
 INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Options :
-library                                 KALLHALL_STD_LIB2
-strmFile                                /home/saul/projects/KALLHALL/lvs_runs/NOR2X1.gds
-topCell                                 NOR2X1
+library                                 KALLHALL_STD_LIB3
+strmFile                                /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds
+topCell                                 TIELO
 view                                    layout
 runDir                                  /home/saul/projects/KALLHALL/lvs_runs
 logFile                                 /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
-techLib                                 KALLHALL_STD_LIB2
+techLib                                 KALLHALL_STD_LIB_TECH
 hierDepth                               32
 maxVertices                             2048
 layerMap                                /pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap
@@ -108,20 +108,20 @@ labelDepth                              32
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating stdVia KAL3/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_1.
-INFO (XSTRM-223): 2. Translating stdVia KAL3/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_2.
+INFO (XSTRM-223): 1. Translating stdVia KAL3/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_1.
+INFO (XSTRM-223): 2. Translating stdVia KAL3/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_2.
 INFO (XSTRM-223): 3. Translating stdVia KAL3/M1_PO/layout as STRUCTURE M1_PO_CDNS_3.
 INFO (XSTRM-223): 4. Translating cellView KAL3/nmos4/layout as STRUCTURE nmos4_CDNS_4.
 INFO (XSTRM-223): 5. Translating cellView KAL3/pmos4/layout as STRUCTURE pmos4_CDNS_5.
-INFO (XSTRM-223): 6. Translating cellView KALLHALL_STD_LIB2/NOR2X1/layout as STRUCTURE NOR2X1.
+INFO (XSTRM-223): 6. Translating cellView KALLHALL_STD_LIB3/TIELO/layout as STRUCTURE TIELO.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 
 Summary of Objects Translated:
-	Scalar Instances:                       4
+	Scalar Instances:                       2
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             68
+	Rectangles:                             58
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -133,13 +133,13 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           4
+	Standard Vias                           3
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               11
+	Pathsegs:                               3
 	Text:                                   0
-	TextDisplay:                            5
+	TextDisplay:                            3
 	Cells:                                  6
 
-Elapsed Time: 0.4s   User Time: 0.2s   CPU Time: 0.2s   Peak VM: 6208KB
+Elapsed Time: 0.4s   User Time: 0.2s   CPU Time: 0.2s   Peak VM: 6236KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '79' warning(s) found.

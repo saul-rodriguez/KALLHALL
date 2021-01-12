@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : TIELO.rep
-ERC Summary File         : TIELO.sum
-LVS Comparison Report    : TIELO.rep.cls
-LVS Softchk Report       : TIELO.softchk
-Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds ("TIELO")
+Report File Name         : TIEHI.rep
+ERC Summary File         : TIEHI.sum
+LVS Comparison Report    : TIEHI.rep.cls
+LVS Softchk Report       : TIEHI.softchk
+Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds ("TIEHI")
 User Name                : saul
-Creation Time            : Tue Jan 12 00:15:58 2021
+Creation Time            : Tue Jan 12 08:46:56 2021
 Current directory        : /home/saul/projects/KALLHALL/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 

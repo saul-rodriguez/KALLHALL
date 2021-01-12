@@ -1,25 +1,25 @@
 ********************************************************************************
 *** PVS HERC SUMMARY
 ***
-Execute on Date/Time    : Tue Jan 12 00:15:58 2021
+Execute on Date/Time    : Tue Jan 12 08:46:56 2021
 PVS HERC VERSION        : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 Rule Deck Path          : /home/saul/projects/KALLHALL/lvs_runs/.technology.rul
 Rule Deck Title         :
 Layout System           : GDSII
-Layout Path             : /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds
+Layout Path             : /home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds
 Current Directory       : /home/saul/projects/KALLHALL/lvs_runs
 User Name:              : saul
 Maximum Results         : 1000
 Maximum Result Vertices : 4096
 Layout Depth            : ALL
 Text Depth              : 0
-Summary File            : TIELO.sum
+Summary File            : TIEHI.sum
 Geometry Flagging       : ACUTE = NO  ANGLED = NO  SKEW = NO  OFFGRID = NO
                           NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
 Keep Empty Checks       : YES
 Excluded Cells          : 
-Layout Primary Cell     : TIELO
-LVS Softchk Report      : TIELO.softchk
+Layout Primary Cell     : TIEHI
+LVS Softchk Report      : TIEHI.softchk
 ASCII ERC Error Report  :
 ERC Results Database    :
 --------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ LAYER M8Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M9Resdum ................... Total Original Geometry:        0 (       0)
 LAYER M10Resdum .................. Total Original Geometry:        0 (       0)
 LAYER M11Resdum .................. Total Original Geometry:        0 (       0)
-LAYER Metal1 ..................... Total Original Geometry:       21 (      21)
+LAYER Metal1 ..................... Total Original Geometry:       20 (      20)
 LAYER Metal2 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal3 ..................... Total Original Geometry:        0 (       0)
 LAYER Metal4 ..................... Total Original Geometry:        0 (       0)
@@ -139,8 +139,8 @@ LAYER nwell_pin .................. Total Original Geometry:        0 (       0)
 --- SUMMARY
 ---
 Total CPU Time                    : 0(s)
-Total Real Time                   : 1(s)
+Total Real Time                   : 0(s)
 Peak Memory Used                  : 35(M)
-Total Original Geometry           : 59 (59)
+Total Original Geometry           : 58 (58)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)

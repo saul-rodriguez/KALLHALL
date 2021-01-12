@@ -10,8 +10,8 @@ logFile	"/home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0
 runDir	"/home/saul/projects/KALLHALL/lvs_runs"
-strmFile	"/home/saul/projects/KALLHALL/lvs_runs/TIELO.gds"
+strmFile	"/home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds"
 strmVersion	5
 techLib	"KALLHALL_STD_LIB_TECH"
-topCell	"TIELO"
+topCell	"TIEHI"
 view	"layout"

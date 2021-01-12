@@ -1,5 +1,3 @@
-cUiMoveCellToBin {TIELO} {Block}
-cUiSelectCellP {TIELO}
 cUiSetViewStatus {TIELO} {layout} {1}
 cUiSetViewStatus {TIELO} {logical} {0}
 cUiSetViewStatus {TIELO} {abstract.pin} {0}

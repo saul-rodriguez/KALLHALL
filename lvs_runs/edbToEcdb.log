@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : TIELO_32478.db
+EDB Library dir : TIEHI_23705.db
 ECDB dir        : ./
-Top Cell        : TIELO
-CDL netlist     : svdb/TIELO.net
-Layer map file  : svdb/TIELO.ecdbmap
-Text map file   : svdb/TIELO.ports
-Dependency map  : TIELO.lmap.perc
-Lvs file        : svdb/TIELO.lvsfile
-Float net file : .TIELO.info.softchk
+Top Cell        : TIEHI
+CDL netlist     : svdb/TIEHI.net
+Layer map file  : svdb/TIEHI.ecdbmap
+Text map file   : svdb/TIEHI.ports
+Dependency map  : TIEHI.lmap.perc
+Lvs file        : svdb/TIEHI.lvsfile
+Float net file : .TIEHI.info.softchk
 debug           : 0
-Source Library  : TIELO_32478
+Source Library  : TIEHI_23705

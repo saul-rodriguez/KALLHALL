@@ -2,7 +2,7 @@
 "Current Directory" internal none /home/saul/projects/KALLHALL
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/saul/projects/KALLHALL/lvs_runs/.preset.autosave
-"Job Signature" internal none IPVS_1610406950_29330
+"Job Signature" internal none IPVS_1610437608_19177
 "PVS Job Mode" internal none lvs
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs
 "Technology Mapping File" internal none /home/saul/projects/KALLHALL/pvtech.lib
@@ -12,22 +12,22 @@
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsgui
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610406953
+"PVS Job Time" internal none 1610437611
 "CDL Out Display Pin Information" internal none ENABLED
 "CDL Out Stop List" internal text auCdl
 "CDL Out View List" internal text auCdl schematic
 "Control File" input text /home/saul/projects/KALLHALL/lvs_runs/pvslvsctl
 "DFII version" internal none 6.1.8.0
 "Do not check rules files before run" internal none ENABLED
-"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/TIELO.spi
-"Input Layout" input none OA: KALLHALL_STD_LIB3 TIELO layout
-"Input Schematic" input none OA: KALLHALL_STD_LIB3 TIELO schematic
-"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/TIEHI.spi
+"Input Layout" input none OA: KALLHALL_STD_LIB3 TIEHI layout
+"Input Schematic" input none OA: KALLHALL_STD_LIB3 TIEHI schematic
+"Intermediate GDSII File" output none /home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds
 "Intermediate GDSII File creation Errors" output none /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
 "Intermediate OASIS File creation Errors" output none /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
-"Layout Cell Name" internal none TIELO
+"Layout Cell Name" internal none TIEHI
 "Layout ConvertPin" internal text geometry
-"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds
+"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds
 "Layout HierDepth" internal none 32
 "Layout Layermap" internal text /pkg/cadence_pdks/gpdk045/gpdk045/gpdk045.layermap
 "Layout Library Name" internal none KALLHALL_STD_LIB3
@@ -36,7 +36,7 @@
 "Layout ReplaceBusBitChar" input none nil
 "Layout Scale" internal none 0.0005
 "Layout TechLib" internal none KALLHALL_STD_LIB_TECH
-"Layout Top Cell" internal none TIELO
+"Layout Top Cell" internal none TIEHI
 "Layout View Name" internal none layout
 "Output Layout Cellmap I" internal text /home/saul/projects/KALLHALL/lvs_runs/lay_cellMap.txt
 "PIPO Log I" log text  /home/saul/projects/KALLHALL/lvs_runs/PIPO1.LOG
@@ -50,42 +50,42 @@
 "SI OSS Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
 "SI Output" log text  /home/saul/projects/KALLHALL/lvs_runs/SI.OUT
 "SI Setup File" internal text  /home/saul/projects/KALLHALL/lvs_runs/si.env
-"Schematic Cell Name" internal none TIELO
+"Schematic Cell Name" internal none TIEHI
 "Schematic Library Name" internal none KALLHALL_STD_LIB3
-"Schematic Netlist" output text /home/saul/projects/KALLHALL/lvs_runs/TIELO.cdl
-"Schematic Top Cell" internal none TIELO
+"Schematic Netlist" output text /home/saul/projects/KALLHALL/lvs_runs/TIEHI.cdl
+"Schematic Top Cell" internal none TIEHI
 "Schematic View Name" internal none schematic
 "Simulator Mode" internal none auCdl
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsvirt
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610406958
-"Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/TIELO.rep.cls
+"PVS Job Time" internal none 1610437616
+"Comparison Report" output cls /home/saul/projects/KALLHALL/lvs_runs/TIEHI.rep.cls
 "ERC Result" internal none EMPTY
-"ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/TIELO.sum
-"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/TIELO.spi
-"Extraction Report" output erc /home/saul/projects/KALLHALL/lvs_runs/TIELO.rep
+"ERC Summary" output text /home/saul/projects/KALLHALL/lvs_runs/TIEHI.sum
+"Extracted Spice File" output text /home/saul/projects/KALLHALL/lvs_runs/TIEHI.spi
+"Extraction Report" output erc /home/saul/projects/KALLHALL/lvs_runs/TIEHI.rep
 "Extraction Result" internal none CLEAN
 "LVS Report Options" internal none -none
-"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds
-"Layout Top Cell" internal none TIELO
+"Layout GDSII" input none /home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds
+"Layout Top Cell" internal none TIEHI
 "PVS Job Mode" internal none lvs
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/saul/projects/KALLHALL/lvs_runs/.technology.rul
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
-"SCONNECT RDB" output rdb /home/saul/projects/KALLHALL/lvs_runs/TIELO.softchk
-"Schematic Top Cell" internal none TIELO
+"SCONNECT RDB" output rdb /home/saul/projects/KALLHALL/lvs_runs/TIEHI.softchk
+"Schematic Top Cell" internal none TIEHI
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvs
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610406958
+"PVS Job Time" internal none 1610437616
 "Comparison Result" internal none MATCH
-"LVS Run Name" internal none TIELO.rep
+"LVS Run Name" internal none TIEHI.rep
 "Run Directory" internal none /home/saul/projects/KALLHALL/lvs_runs/
 "Schematic Netlist" input text /home/saul/projects/KALLHALL/lvs_runs/netlist
 "UI Data" internal none ENABLED
 "PVS Version" internal none 16.15-s010
 "Binary Name" internal none pvsnvn
 "PVS Build Date" internal none "Fri Jun 28 22:24:07 PDT 2019"
-"PVS Job Time" internal none 1610406960
+"PVS Job Time" internal none 1610437618

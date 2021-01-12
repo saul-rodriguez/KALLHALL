@@ -3,27 +3,27 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Tue Jan 12 00:16:00 2021
-#####  ERC Summary File              :   TIELO.sum
-#####  Extraction Report File        :   TIELO.rep
-#####  Comparison Report File        :   TIELO.rep.cls
-#####  Top Cell                      :   TIELO  <vs>  TIELO
+#####  NVN Run Start                 :   Tue Jan 12 08:46:58 2021
+#####  ERC Summary File              :   TIEHI.sum
+#####  Extraction Report File        :   TIEHI.rep
+#####  Comparison Report File        :   TIEHI.rep.cls
+#####  Top Cell                      :   TIEHI  <vs>  TIEHI
 #####  
 #####  Run Result                    :   MATCH
 #####  
 #####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
-#####  Layout Design                 :   KALLHALL_STD_LIB3 TIELO layout
-#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/TIELO.cdl (cdl)
+#####  Layout Design                 :   KALLHALL_STD_LIB3 TIEHI layout
+#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/TIEHI.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   TIELO.rep.cps
+#####  Pin Swap File                 :   TIEHI.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
-#####  Extraction Exec Time          :   0h 0m 1s - (1s)
+#####  Extraction Exec Time          :   0h 0m 0s - (0s)
 #####  Extraction Peak Memory Usage  :   35.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
 #####  NVN Peak Memory Usage         :   235.45MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
@@ -64,7 +64,7 @@ Cells that have been blackboxed              |         0
           |     Initial Pins     |     Compare Pins     |            | 
 Cell      |   lay    :    sch    |   lay    :    sch    | Status     | Detail
 ----------+----------+-----------+----------+-----------+------------+-----------
-TIELO     |       *3 :         1 |        3 :         3 | match      | 
+TIEHI     |       *3 :         1 |        3 :         3 | match      | 
 
 
 ##############################################################################################################
@@ -76,8 +76,8 @@ TIELO     |       *3 :         1 |        3 :         3 | match      |
 Command Line LVS Rule Values
 ----------------------------
 
-    layout_primary                          TIELO {-top_cell TIELO}
-    schematic_primary                       TIELO {-source_top_cell TIELO}
+    layout_primary                          TIEHI {-top_cell TIEHI}
+    schematic_primary                       TIEHI {-source_top_cell TIEHI}
 
 LVS Rules Given in the Rules File
 ---------------------------------
@@ -85,9 +85,9 @@ LVS Rules Given in the Rules File
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
     lvs_abort                               -check_device_for_property_rule        no  
-    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/TIELO.gds
+    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/TIEHI.gds
     layout_format                           gdsii
-    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/TIELO.cdl
+    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/TIEHI.cdl
     schematic_format                        cdl
     lvs_netlist                             yes -allow_inconsistent_model
                                              
@@ -215,7 +215,7 @@ LVS Rules Given in the Rules File
     lvs_check_property                      L ( g45inds ) space space -tolerance 0
     lvs_check_property                      L ( g45inds ) nr nr -tolerance 0
     lvs_check_property                      L ( g45inds ) rad rad -tolerance 0
-    lvs_report_file                         TIELO.rep
+    lvs_report_file                         TIEHI.rep
     lvs_report_max                          50 -mismatched_net_limit 100 
     lvs_map_device                          M ( g45n1svt ) MN ( g45n1svt ) -source_layout
     lvs_map_device                          M ( g45n1hvt ) MN ( g45n1hvt ) -source_layout
@@ -385,12 +385,12 @@ Effective LVS Rule Values
                               |                                                |
                               |        ------->>>   MATCH   <<<-------         |
                               |                                                |
-                              |               TIELO  <vs>  TIELO               |
+                              |               TIEHI  <vs>  TIEHI               |
                               |                                                |
                               |                                                |
                               +------------------------------------------------+
 
-+===[TIELO]===================================================================================================
++===[TIEHI]===================================================================================================
 |                                                 STATISTICS                                                  
 +=============================================================================================================
 
@@ -409,13 +409,13 @@ Pins              |         :         |         :         |       3 :       3
 Nets              |         :         |         :         |       1 :       1
 ==================+=========+=========+=========+=========+=========+========
 
-+===[TIELO]===================================================================================================
++===[TIEHI]===================================================================================================
 |                                           INITIAL CORRESPONDENCES                                           
 +=============================================================================================================
 
 Type     | Name
----------+----------------
-Pin      | VDD! VSS! Y
+---------+---------------
+Pin      | Y
 
 
 ##############################################################################################################

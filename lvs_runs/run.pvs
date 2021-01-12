@@ -5,9 +5,9 @@ pwd_d=`pwd`
 cd /home/saul/projects/KALLHALL/lvs_runs ;\
 /pkg/cadence/installs/PVS161/bin/pvs \
 	-lvs \
-	-top_cell TIELO \
-	-source_top_cell TIELO \
-	-spice /home/saul/projects/KALLHALL/lvs_runs/TIELO.spi \
+	-top_cell TIEHI \
+	-source_top_cell TIEHI \
+	-spice /home/saul/projects/KALLHALL/lvs_runs/TIEHI.spi \
 	-control /home/saul/projects/KALLHALL/lvs_runs/pvslvsctl \
 	-ui_data \
 	-gdb_data \

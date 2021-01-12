@@ -2,4 +2,4 @@ cUiSetViewStatus {TIELO} {layout} {1}
 cUiSetViewStatus {TIELO} {logical} {0}
 cUiSetViewStatus {TIELO} {abstract.pin} {0}
 cUiSetViewStatus {TIELO} {abstract.ext} {0}
-cUiSetViewStatus {TIELO} {abstract} {3}
+cUiSetViewStatus {TIELO} {abstract} {0}

@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : TIEHI_23705.db
+EDB Library dir : FILL4_28576.db
 ECDB dir        : ./
-Top Cell        : TIEHI
-CDL netlist     : svdb/TIEHI.net
-Layer map file  : svdb/TIEHI.ecdbmap
-Text map file   : svdb/TIEHI.ports
-Dependency map  : TIEHI.lmap.perc
-Lvs file        : svdb/TIEHI.lvsfile
-Float net file : .TIEHI.info.softchk
+Top Cell        : FILL4
+CDL netlist     : svdb/FILL4.net
+Layer map file  : svdb/FILL4.ecdbmap
+Text map file   : svdb/FILL4.ports
+Dependency map  : FILL4.lmap.perc
+Lvs file        : svdb/FILL4.lvsfile
+Float net file : .FILL4.info.softchk
 debug           : 0
-Source Library  : TIEHI_23705
+Source Library  : FILL4_28576

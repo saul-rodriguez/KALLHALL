@@ -3,10 +3,12 @@ INFO (DB-120008): oaSocket connection timeout value was set to 2 seconds.
 
 Running simulation in directory: "/home/saul/projects/KALLHALL/lvs_runs/".
 
+KALLHALL libInit.il file is loaded
+initializing MOS callbacks
 INFO (TECH-150003): The technology database "basic" has been automatically
 updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
 Running Artist Hierarchical Netlisting ...
-End netlisting Jan 12 08:46:53 2021
+End netlisting Jan 12 13:51:21 2021
 
 Running simin
 
@@ -14,8 +16,8 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Jan 12 08:46:53 2021
+Begin simulation:    Jan 12 13:51:21 2021
 
 auCdl netlisting completed
-End simulation:      Jan 12 08:46:53 2021
+End simulation:      Jan 12 13:51:21 2021
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.

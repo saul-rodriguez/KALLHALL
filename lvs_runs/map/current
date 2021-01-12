@@ -1,15 +1,15 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "TIEHI"
+  blockName "FILL4"
   repList "auCdl schematic"
   stopList "auCdl"
-  globalList "VDD! VSS!"
+  globalList "VSS! VDD!"
   hierDelim "."
   netlistDir "/home/saul/projects/KALLHALL/lvs_runs/"
  )
 ( model
-( "KALLHALL_STD_LIB3/TIEHI/schematic" "TIEHI" )
+( "KALLHALL_STD_LIB3/FILL4/schematic" "FILL4" )
  )
-( "TIEHI" "ihnl/cds0/map" )
+( "FILL4" "ihnl/cds0/map" )
  )

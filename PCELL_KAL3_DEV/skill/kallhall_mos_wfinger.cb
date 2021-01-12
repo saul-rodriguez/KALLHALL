@@ -1,0 +1,16 @@
+procedure(kallhall_mos_wfinger(param)
+  prog( (w)
+     w = cdfParseFloatString(cdfgData->w->value)
+     when(w>0 
+       printf("Updating parameter wfinger of MOS\n")
+	   nf = cdfParseFloatString(cdfgData->nf->value)
+	   ftVar = w/nf;
+	   ;;sprintf( strVar "%g" ftVar);
+	   strVar = aelSuffixNotation(ftVar)
+	   printf(strVar);	
+       cdfgData->wfinger->value = strVar
+     )
+  )
+)
+
+

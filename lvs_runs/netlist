@@ -2,9 +2,9 @@
 * auCdl Netlist:
 * 
 * Library Name:  KALLHALL_STD_LIB3
-* Top Cell Name: TIEHI
+* Top Cell Name: FILL4
 * View Name:     schematic
-* Netlisted on:  Jan 12 08:46:53 2021
+* Netlisted on:  Jan 12 13:51:21 2021
 ************************************************************************
 
 *.BIPOLAR
@@ -18,21 +18,19 @@
 *.MEGA
 .PARAM
 
-*.GLOBAL VDD!
-+        VSS!
+*.GLOBAL VSS!
++        VDD!
 
-*.PIN VDD!
-*+    VSS!
+*.PIN VSS!
+*+    VDD!
 
 ************************************************************************
 * Library Name: KALLHALL_STD_LIB3
-* Cell Name:    TIEHI
+* Cell Name:    FILL4
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT TIEHI Y
-*.PININFO Y:O
-MM1 net4 net4 VSS! VSS! g45n1svt W=2u L=1u
-MM0 Y net4 VDD! VDD! g45p1svt W=4u L=1u
+.SUBCKT FILL4
+*.PININFO
 .ENDS
 

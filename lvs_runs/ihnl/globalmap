@@ -1,6 +1,6 @@
 CADENCE IHNL11140
 $model
-KALLHALL_STD_LIB3/TIEHI/schematic TIEHI
+KALLHALL_STD_LIB3/FILL4/schematic FILL4
 $endmodel
 $net
 VSS! VSS!

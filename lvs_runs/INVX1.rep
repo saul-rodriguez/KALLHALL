@@ -5,13 +5,13 @@
 			*****************************************************
 
 
-Report File Name         : FILL4.rep
-ERC Summary File         : FILL4.sum
-LVS Comparison Report    : FILL4.rep.cls
-LVS Softchk Report       : FILL4.softchk
-Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/FILL4.gds ("FILL4")
+Report File Name         : INVX1.rep
+ERC Summary File         : INVX1.sum
+LVS Comparison Report    : INVX1.rep.cls
+LVS Softchk Report       : INVX1.softchk
+Layout Name              : /home/saul/projects/KALLHALL/lvs_runs/INVX1.gds ("INVX1")
 User Name                : saul
-Creation Time            : Tue Jan 12 13:51:25 2021
+Creation Time            : Thu Sep  2 00:35:30 2021
 Current directory        : /home/saul/projects/KALLHALL/lvs_runs
 PVS Version              : 16.15-s010 Fri Jun 28 22:24:07 PDT 2019
 

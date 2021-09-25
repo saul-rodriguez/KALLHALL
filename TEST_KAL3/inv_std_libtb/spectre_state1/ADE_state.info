@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("TEST_KAL3" "inv_std_libtb" "schematic" "spectre")
+descriptionText = "None"

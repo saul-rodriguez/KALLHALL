@@ -3,35 +3,31 @@
 #####                                         PVS LVS COMPARISON
 #####  
 #####  Version                       :   16.15-s010
-#####  NVN Run Start                 :   Tue Jan 12 13:51:26 2021
-#####  ERC Summary File              :   FILL4.sum
-#####  Extraction Report File        :   FILL4.rep
-#####  Comparison Report File        :   FILL4.rep.cls
-#####  Top Cell                      :   FILL4  <vs>  FILL4
+#####  NVN Run Start                 :   Thu Sep  2 00:35:31 2021
+#####  ERC Summary File              :   INVX1.sum
+#####  Extraction Report File        :   INVX1.rep
+#####  Comparison Report File        :   INVX1.rep.cls
+#####  Top Cell                      :   INVX1  <vs>  INVX1
 #####  
 #####  Run Result                    :   MATCH
 #####  
-#####  Run Summary                   :   [WARN]  Top Cell Has Extra Pins
-#####                                :   [WARN]  Layout Netlist Is Empty
-#####                                :   [WARN]  Schematic Netlist Is Empty
-#####                                :   [INFO]  ERC Results: Empty
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
-#####                                :   [INFO]  Extra Global Top Cell Pin(s) Exists
 #####  
-#####  Layout Design                 :   KALLHALL_STD_LIB3 FILL4 layout
-#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/FILL4.cdl (cdl)
+#####  Layout Design                 :   KALLHALL_STD_LIB3 INVX1 layout
+#####  Schematic File                :   /home/saul/projects/KALLHALL/lvs_runs/INVX1.cdl (cdl)
 #####  Rules File                    :   .technology.rul
-#####  Pin Swap File                 :   FILL4.rep.cps
+#####  Pin Swap File                 :   INVX1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 0s - (0s)
 #####  Extraction Exec Time          :   0h 0m 0s - (0s)
-#####  Extraction Peak Memory Usage  :   31.00MB
+#####  Extraction Peak Memory Usage  :   35.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
 #####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
-#####  NVN Peak Memory Usage         :   230.28MB
+#####  NVN Peak Memory Usage         :   232.39MB
 #####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
 #####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   230.28MB
+#####  LVS Total Peak Memory Usage   :   232.39MB
 #####  
 ##############################################################################################################
 
@@ -67,8 +63,8 @@ Cells that have been blackboxed              |         0
 
           |     Initial Pins     |     Compare Pins     |            | 
 Cell      |   lay    :    sch    |   lay    :    sch    | Status     | Detail
-----------+----------+-----------+----------+-----------+------------+----------------------
-FILL4     |       *2 :         0 |        0 :         0 | match      | empty, extra pins
+----------+----------+-----------+----------+-----------+------------+-----------
+INVX1     |       *4 :         2 |        4 :         4 | match      | 
 
 
 ##############################################################################################################
@@ -80,8 +76,8 @@ FILL4     |       *2 :         0 |        0 :         0 | match      | empty, ex
 Command Line LVS Rule Values
 ----------------------------
 
-    layout_primary                          FILL4 {-top_cell FILL4}
-    schematic_primary                       FILL4 {-source_top_cell FILL4}
+    layout_primary                          INVX1 {-top_cell INVX1}
+    schematic_primary                       INVX1 {-source_top_cell INVX1}
 
 LVS Rules Given in the Rules File
 ---------------------------------
@@ -89,9 +85,9 @@ LVS Rules Given in the Rules File
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
     lvs_abort                               -check_device_for_property_rule        no  
-    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/FILL4.gds
+    layout_path                             /home/saul/projects/KALLHALL/lvs_runs/INVX1.gds
     layout_format                           gdsii
-    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/FILL4.cdl
+    schematic_path                          /home/saul/projects/KALLHALL/lvs_runs/INVX1.cdl
     schematic_format                        cdl
     lvs_netlist                             yes -allow_inconsistent_model
                                              
@@ -219,7 +215,7 @@ LVS Rules Given in the Rules File
     lvs_check_property                      L ( g45inds ) space space -tolerance 0
     lvs_check_property                      L ( g45inds ) nr nr -tolerance 0
     lvs_check_property                      L ( g45inds ) rad rad -tolerance 0
-    lvs_report_file                         FILL4.rep
+    lvs_report_file                         INVX1.rep
     lvs_report_max                          50 -mismatched_net_limit 100 
     lvs_map_device                          M ( g45n1svt ) MN ( g45n1svt ) -source_layout
     lvs_map_device                          M ( g45n1hvt ) MN ( g45n1hvt ) -source_layout
@@ -389,22 +385,37 @@ Effective LVS Rule Values
                               |                                                |
                               |        ------->>>   MATCH   <<<-------         |
                               |                                                |
-                              |               FILL4  <vs>  FILL4               |
+                              |               INVX1  <vs>  INVX1               |
                               |                                                |
-                              |                   EXTRA PINS                   |
-                              |               EXTRA GLOBAL PINS                |
                               |                                                |
                               +------------------------------------------------+
 
-+===[FILL4]===================================================================================================
-|                                                 EXTRA PINS                                                  
++===[INVX1]===================================================================================================
+|                                                 STATISTICS                                                  
 +=============================================================================================================
 
-Side     | Pins
----------+------------------------------------------------------
-Lay      | VDD VSS
----------+------------------------------------------------------
-Sch      | VSS!<unconnected global> VDD!<unconnected global>
+
+                  |     Original      |     Filtered      |     Reduced      
+Cell              |   lay   :   sch   |   lay   :   sch   |   lay   :  sch
+------------------+---------+---------+---------+---------+---------+--------
+MP [4 pins]       |         :         |         :         |         :        
+ MP(G45P1SVT)     |       1 :       1 |       1 :       1 |       1 :       1
+MN [4 pins]       |         :         |         :         |         :        
+ MN(G45N1SVT)     |       1 :       1 |       1 :       1 |       1 :       1
+------------------+---------+---------+---------+---------+---------+--------
+Total             |       2 :       2 |       2 :       2 |       2 :       2
+==================+=========+=========+=========+=========+=========+========
+Pins              |         :         |         :         |       4 :       4
+Nets              |         :         |         :         |       0 :       0
+==================+=========+=========+=========+=========+=========+========
+
++===[INVX1]===================================================================================================
+|                                           INITIAL CORRESPONDENCES                                           
++=============================================================================================================
+
+Type     | Name
+---------+---------------
+Pin      | A Y
 
 
 ##############################################################################################################

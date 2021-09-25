@@ -1,5 +1,7 @@
 hnlLastStopCellInfo = '(
-                        )
+                           ( "KAL3" "nmos4" "auCdl" "47" "1610452316" )
+                          ( "KAL3" "pmos4" "auCdl" "47" "1610452330" )
+                       )
 hnlLastMaxNameLength = 60
 hnlLastNamePrefix = "hnl_"
 hnlLastNetNamePrefix = "N"

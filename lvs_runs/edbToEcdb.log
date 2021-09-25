@@ -3,14 +3,14 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : FILL4_28576.db
+EDB Library dir : INVX1_5007.db
 ECDB dir        : ./
-Top Cell        : FILL4
-CDL netlist     : svdb/FILL4.net
-Layer map file  : svdb/FILL4.ecdbmap
-Text map file   : svdb/FILL4.ports
-Dependency map  : FILL4.lmap.perc
-Lvs file        : svdb/FILL4.lvsfile
-Float net file : .FILL4.info.softchk
+Top Cell        : INVX1
+CDL netlist     : svdb/INVX1.net
+Layer map file  : svdb/INVX1.ecdbmap
+Text map file   : svdb/INVX1.ports
+Dependency map  : INVX1.lmap.perc
+Lvs file        : svdb/INVX1.lvsfile
+Float net file : .INVX1.info.softchk
 debug           : 0
-Source Library  : FILL4_28576
+Source Library  : INVX1_5007
